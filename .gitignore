@@ -1,0 +1,14 @@
+# Environment files
+.env
+
+# Build files
+dist/
+
+# NPM packages
+node_modules/
+
+# IDE files
+.idea
+
+# Other
+.DS_store
