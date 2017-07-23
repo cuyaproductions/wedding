@@ -17,7 +17,7 @@ const app = express();
 dotenv.config();
 configPassport(passport);
 
-app.locals.appName = 'IBMid authenticator';
+app.locals.appName = 'Nic + Diego';
 
 // Templating settings
 hbs.registerPartials(path.resolve(__dirname, 'views/partials'));
@@ -36,6 +36,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use('/static', express.static(path.resolve(__dirname, 'dist')));
 app.use(routes(passport));
 
 app.listen(process.env.PORT, () => {
