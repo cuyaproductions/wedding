@@ -51,12 +51,17 @@ gulp.task('scripts', () => {
    .pipe(browserSync.reload());
 });
 
+gulp.task('images', () => {
+  return gulp.src(resolve(paths.src, paths.images, '**/*'))
+   .pipe(gulp.dest(resolve(paths.dist, paths.images)));
+});
+
 gulp.task('dev', () => {
   let started = false;
 
   nodemon({
     exec: 'npm start',
-    ext: 'js hbs',
+    ext: 'js hbs yml',
     ignore: ['gulpfile.babel.js', resolve(paths.src), resolve(paths.dist)],
     task: ['default'],
   }).on('start', () => {
@@ -67,6 +72,7 @@ gulp.task('dev', () => {
 
       gulp.watch(resolve(paths.src, paths.styles, '**/*.scss'), ['styles']);
       gulp.watch(resolve(paths.src, paths.scripts, '**/*.js'), ['scripts']);
+      gulp.watch(resolve(paths.src, paths.images, '**/*'), ['images']);
       gulp.watch(resolve(paths.views, '**/*.hbs')).on('change', browserSync.reload);
 
       started = true;
@@ -74,4 +80,4 @@ gulp.task('dev', () => {
   });
 });
 
-gulp.task('default', ['styles', 'scripts']);
+gulp.task('default', ['styles', 'scripts', 'images']);

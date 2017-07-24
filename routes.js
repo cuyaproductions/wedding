@@ -13,7 +13,7 @@ function routes (passport) {
   const router = express.Router();
 
   router.get('/', (request, response) => {
-    response.render('index');
+    response.render('index', request.content);
   });
 
   router.get('/login', (request, response) => {

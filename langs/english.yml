@@ -1,0 +1,24 @@
+lang: en
+event:
+  date: June 29, 2018
+  city: Austin, Texas
+
+nav:
+  - The big day
+  - Schedule
+  - FAQ
+  - RSVP
+
+hero:
+  title: We're getting married!
+
+bigDay:
+  title: The big day
+  details:
+    - label: Who
+      value: Nic and Diego
+    - label: When
+      value: Friday, June 29, 2018 at 5pm
+    - label: Where
+      value: House on the Hill in Austin, Texas
+

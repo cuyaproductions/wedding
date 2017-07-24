@@ -1,0 +1,32 @@
+.big-day {
+  @include container;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    flex: 0 1 rem(500);
+    margin-right: 1.5rem;
+  }
+
+  &__picture-container {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  &__picture {
+    max-width: 80%;
+    transform: rotate(-10deg) translateX(1em);
+    box-shadow: 0rem 1rem 3rem rgba(black, 0.2);
+  }
+
+  &__detail {
+    margin-bottom: 0.7em;
+  }
+
+  &__label {
+    display: inline-block;
+    min-width: 4em;
+    font-weight: 600;
+  }
+
+}

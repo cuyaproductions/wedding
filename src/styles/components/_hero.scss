@@ -1,0 +1,24 @@
+.hero {
+  background-color: lighten($brown, 50);
+  background-image: url('/static/images/enchanted_rock.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  &__container {
+    @include container;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  &__star {
+    position: relative;
+    top: -0.2em;
+    width: rem(14);
+    margin: 0 0.2em;
+  }
+
+  &__subtitle {
+    font-family: $font-sans-serif;
+    font-size: em(28);
+  }
+}

@@ -9,6 +9,8 @@ import bodyParser from 'body-parser';
 import session from 'express-session';
 import passport from 'passport';
 
+import findLanguage from './middleware/international';
+import configHbs from './config/hbs';
 import configPassport from './config/passport';
 import routes from './routes';
 
@@ -16,12 +18,11 @@ const app = express();
 
 dotenv.config();
 configPassport(passport);
+configHbs(hbs, app);
 
 app.locals.appName = 'Nic + Diego';
 
 // Templating settings
-hbs.registerPartials(path.resolve(__dirname, 'views/partials'));
-hbs.localsAsTemplateData(app);
 app.engine('hbs', hbs.__express);
 app.set('view engine', 'hbs');
 
@@ -36,8 +37,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+
 app.use('/static', express.static(path.resolve(__dirname, 'dist')));
-app.use(routes(passport));
+app.use('/:lang?', findLanguage);
+app.use('/:lang', routes(passport));
 
 app.listen(process.env.PORT, () => {
   console.log(`Listening to port: ${process.env.PORT}`);

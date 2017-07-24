@@ -1,0 +1,24 @@
+lang: es
+event:
+  date: Junio 29, 2018
+  city: Austin, Texas, EEUU
+
+nav:
+  - El gran día
+  - Horario
+  - Preguntas
+  - Reservación
+
+hero:
+  title: ¡Nos casamos!
+
+bigDay:
+  title: El gran día
+  details:
+    - label: Quienes
+      value: Nic and Diego
+    - label: Cuando
+      value: Friday, June 29, 2018 a las 5pm
+    - label: Donde
+      value: House on the Hill en Austin, Texas, EEUU
+

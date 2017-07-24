@@ -1,0 +1,48 @@
+.nav {
+  position: absolute;
+  width: 100%;
+
+  font-size: 1rem;
+
+  &__container {
+    @include container;
+    align-content: center;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0.3em 0;
+  }
+
+  &__logo {
+    width: rem(155);
+  }
+
+  &__list {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    margin-left: 1em;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 0.3em 0.5em;
+    text-decoration: none;
+    color: $black;
+    box-shadow: 0 0 0 $blue;
+    transition: box-shadow 150ms;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      box-shadow: 0 2px 0 $blue;
+    }
+
+    &:active,
+    &--active {
+      background-color: rgba($blue, 0.25);
+    }
+  }
+}
