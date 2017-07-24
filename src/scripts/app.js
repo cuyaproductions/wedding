@@ -1,3 +1,3 @@
-import log from './test';
+import nav from './nav';
 
-log();
+nav();

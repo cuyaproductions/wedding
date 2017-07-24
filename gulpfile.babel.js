@@ -48,7 +48,7 @@ gulp.task('scripts', () => {
   return gulp.src(resolve(paths.src, paths.scripts, 'app.js'))
    .pipe(webpack(webpackConfig))
    .pipe(gulp.dest(resolve(paths.dist, paths.scripts)))
-   .pipe(browserSync.reload());
+   .pipe(browserSync.stream());
 });
 
 gulp.task('images', () => {
