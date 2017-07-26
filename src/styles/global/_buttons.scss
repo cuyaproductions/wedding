@@ -1,0 +1,36 @@
+button, 
+input[type=button], 
+input[type=submit],
+a,
+.button {
+  cursor: pointer;
+
+  &:focus,
+  &:active {
+    outline: dotted 1px currentColor;
+  }
+}
+
+button, 
+input[type=button], 
+input[type=submit],
+.button {
+  margin: 0;
+  padding: 0.1em 0.5em;
+  
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  
+  background: none;
+  border: none;
+}
+
+a {
+  color: $brown;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

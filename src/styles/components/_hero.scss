@@ -2,23 +2,35 @@
   background-color: lighten($brown, 50);
   background-image: url('/static/images/enchanted_rock.svg');
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom -2px center;
+  background-size: contain;
+
+  @include media($bp-sm) {
+    background-size: cover;
+  }
 
   &__container {
     @include container;
+    padding-top: rem(100);
+    padding-bottom: rem(50);
     font-size: 1rem;
     text-align: center;
+
+    @include media($bp-sm) {
+      padding-top: rem(100);
+      padding-bottom: rem(150);
+    }
   }
 
   &__star {
     position: relative;
-    top: -0.2em;
-    width: rem(14);
-    margin: 0 0.2em;
+    bottom: 0.07em;
+    width: 0.6em;
+    margin: 0 0.1em;
   }
 
   &__subtitle {
     font-family: $font-sans-serif;
-    font-size: em(28);
+    font-size: 1em;
   }
 }

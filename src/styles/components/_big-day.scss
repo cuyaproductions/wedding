@@ -1,32 +1,68 @@
 .big-day {
   @include container;
-  display: flex;
   align-items: center;
+  margin-top: rem(30);
+
+  @include media($bp-md) {
+    display: flex;
+    max-width: rem(800);
+  }
 
   &__content {
-    flex: 0 1 rem(500);
-    margin-right: 1.5rem;
+    flex: 0 1 rem(600);
+    margin-bottom: rem(30);
+
+    @include media($bp-md) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    @include media($bp-md) {
+      text-align: left;
+    }
   }
 
   &__picture-container {
     flex: 1 1 100%;
     text-align: center;
+    margin: 0 rem(-16);
   }
 
   &__picture {
-    max-width: 80%;
-    transform: rotate(-10deg) translateX(1em);
-    box-shadow: 0rem 1rem 3rem rgba(black, 0.2);
+    margin: 0 -1em;
+    width: 100%;
+
+    @include media($bp-sm) {
+      max-width: rem(400);
+      transform: rotate(-10deg) translateY(2em);
+      box-shadow: 0rem 1rem 3rem rgba(black, 0.2);
+    }
+    @include media($bp-md) {
+      width: 80%;
+      transform: rotate(-10deg);
+    }
+
+  }
+
+  &__details {
+    border: 0;
+    margin: auto;
+
+    @include media($bp-md) {
+      margin: 0;
+    }
   }
 
   &__detail {
-    margin-bottom: 0.7em;
+    vertical-align: top;
+    padding-bottom: 0.7em;
   }
 
   &__label {
-    display: inline-block;
-    min-width: 4em;
+    padding-right: 1em;
     font-weight: 600;
   }
-
 }

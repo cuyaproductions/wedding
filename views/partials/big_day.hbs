@@ -1,11 +1,20 @@
-<section class="section big-day" id="the-big-day">
+<section class="section big-day" id="big-day">
   <div class="big-day__content">
     <h1 class="big-day__title">{{ bigDay.title }}</h1>
-    <ul class="big-day__details">
-      {{#each bigDay.details }}
-        <li class="big-day__detail"><span class="big-day__label">{{ label }}:</span> {{ value }}</li>
-      {{/each}}
-    </ul>
+    <table class="big-day__details">
+      <tbody>
+        {{#each bigDay.details }}
+          <tr class="big-day__detail">
+            <td class="big-day__label">
+              {{ label }}:
+            </td>
+            <td>
+              {{ value }}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
   </div>
   <div class="big-day__picture-container">
     <img class="big-day__picture" src="/static/images/us.png" />

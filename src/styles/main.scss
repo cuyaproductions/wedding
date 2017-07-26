@@ -1,8 +1,11 @@
+@import 'global/media-queries';
 @import 'global/colors';
+@import 'global/typography';
 @import 'global/layout';
 @import 'global/reset';
-@import 'global/typography';
+@import 'global/buttons';
 
 @import 'components/nav';
 @import 'components/hero';
 @import 'components/big-day';
+

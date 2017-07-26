@@ -4,10 +4,17 @@ event:
   city: Austin, Texas
 
 nav:
-  - The big day
-  - Schedule
-  - FAQ
-  - RSVP
+  menu: Menu
+  close: Close menu
+  links:
+    - name: The big day
+      link: '#big-day'
+    - name: Schedule
+      link: '#schedule'
+    - name: FAQ
+      link: '#faq'
+    - name: RSVP
+      link: rsvp
 
 hero:
   title: We're getting married!

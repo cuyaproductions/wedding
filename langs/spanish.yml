@@ -4,10 +4,17 @@ event:
   city: Austin, Texas, EEUU
 
 nav:
-  - El gran día
-  - Horario
-  - Preguntas
-  - Reservación
+  menu: Menú
+  close: Cerrar menu
+  links:
+    - name: El gran día
+      link: '#big-day'
+    - name: Horario
+      link: '#schedule'
+    - name: Preguntas
+      link: '#faq'
+    - name: Reservación
+      link: rsvp
 
 hero:
   title: ¡Nos casamos!

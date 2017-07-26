@@ -1,0 +1,10 @@
+$bp-sm: rem(420);
+$bp-md: rem(750);
+$bp-lg: rem(900);
+$bp-xlg: rem(1200);
+
+@mixin media($breakpoint) {
+  @media (min-width: #{$breakpoint}) {
+    @content;
+  }
+}
