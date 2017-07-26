@@ -13,7 +13,7 @@ function nav () {
       : navTrigger.getAttribute('data-open');
     
     navTrigger.style.transform = triggerIsActive ? 
-      `translateX(-${navList.offsetWidth}px) rotate(-90deg)` : null;
+      `translateX(-${navList.offsetWidth + 3}px) rotate(-90deg)` : null;
   });
 
   navOverlay.addEventListener('click', () => {

@@ -1,6 +1,6 @@
 lang: es
 event:
-  date: Junio 29, 2018
+  date: 29 de junio, 2018
   city: Austin, Texas, EEUU
 
 nav:
@@ -23,9 +23,9 @@ bigDay:
   title: El gran día
   details:
     - label: Quienes
-      value: Nic and Diego
-    - label: Cuando
-      value: Friday, June 29, 2018 a las 5pm
-    - label: Donde
+      value: Nic y Diego
+    - label: Cuándo
+      value: viernes 29 de junio, 2018 a las 5pm
+    - label: Dónde
       value: House on the Hill en Austin, Texas, EEUU
 
