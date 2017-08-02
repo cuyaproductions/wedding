@@ -9,3 +9,13 @@
     padding-right: rem(16);
   }
 }
+
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin circle($size) {
+  @include square($size);
+  border-radius: 100%;
+}

@@ -1,6 +1,8 @@
 .nav {
   position: absolute;
   width: 100%;
+  background-color: rgba($blue, 0.3);
+  color: white;
 
   font-size: 1rem;
 
@@ -17,8 +19,10 @@
   &__logo {
     position: relative;
     top: 0.3em;
-    width: rem(100);
-    flex: 0 0 rem(100);
+  }
+
+  &__logo-image {
+    width: 7em;
   }
 
   &__overlay {
@@ -40,7 +44,7 @@
   &__trigger {
     position: relative;
     z-index: 3;
-
+    color: inherit;
     transform-origin: 100%;
     transition: transform 250ms ease-out;
 
@@ -50,12 +54,13 @@
 
     &--active {
       background-color: white;
+      color: $black;
     }
   }
 
   &__list-container {
     height: 100vh;
-    min-width: 30vw;
+    min-width: rem(200);
 
     position: fixed;
     right: 0;
@@ -78,9 +83,9 @@
     background-color: white;
 
     transform: translateX(100%);
+    transition: transform 250ms ease-out;
 
     &--visible {
-      transition: transform 250ms ease-out;
       box-shadow: 0 0 2em rgba($black, 0.25);
       transform: translateX(0);
     }
@@ -91,6 +96,7 @@
 
       background-color: transparent;
       transform: initial;
+      transition: none;
     }
   }
 
@@ -103,12 +109,13 @@
   &__link {
     display: block;
     padding: 0.6em 0.5em;
+    color: $blue;
     text-decoration: none;
-    color: $black;
     box-shadow: 0 0 0 $blue;
     transition: box-shadow 150ms;
 
     @include media($bp-md) {
+      color: inherit;
       display: inline-block;
       padding: 0.3em 0.5em;
 

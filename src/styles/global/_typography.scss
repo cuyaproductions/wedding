@@ -34,6 +34,13 @@ p {
   margin: 0 0 1.3em;
 }
 
+input, 
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 @include headers {
   margin: 0 0 0.5em;
 

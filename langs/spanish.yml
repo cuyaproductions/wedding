@@ -29,3 +29,17 @@ bigDay:
     - label: Dónde
       value: House on the Hill en Austin, Texas, EEUU
 
+rsvp:
+  title: Reservación
+  name: Tu nombre
+  size: ¿Cuántos traes?
+  optional: opcionál
+  yesSingle: ¡Estaré ahí!
+  yesMultiple: ¡Estaremos ahí!
+  noSingle: Lamentablemente, no podre ir
+  yesMultiple: Lamentablemente, no podremos ir
+  foodRestrictions: Alergias alimenticias
+  song: Canción que te gustaría bailar (titulo y artista) 
+  comments: Comentarios adicionáles
+  send: enviar
+

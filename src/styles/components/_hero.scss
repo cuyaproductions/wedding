@@ -1,25 +1,39 @@
 .hero {
   background-color: lighten($brown, 50);
-  background-image: url('/static/images/enchanted_rock.svg');
-  background-repeat: no-repeat;
-  background-position: bottom -2px center;
-  background-size: contain;
+  background-image: linear-gradient(rgba($brown, 0.25) 0%, rgba($brown, 0.5) 100%), url('/static/images/us_park.jpg');
+  background-repeat: repeat, no-repeat;
+  background-position: center, top right;
+  background-size: cover;
 
   @include media($bp-sm) {
     background-size: cover;
   }
 
+  @include media($bp-lg) {
+    background-position: center, top -2vw right;
+  }
+
   &__container {
     @include container;
+    padding-bottom: rem(100);
     padding-top: rem(100);
-    padding-bottom: rem(50);
     font-size: 1rem;
     text-align: center;
 
     @include media($bp-sm) {
-      padding-top: rem(100);
       padding-bottom: rem(150);
+      padding-top: rem(150);
     }
+  }
+
+  &__title,
+  &__subtitle { 
+    color: white;
+    text-shadow: 0 3px 4px rgba($black, 0.7);
+  }
+
+  &__title {
+    margin-bottom: 0.2em;
   }
 
   &__star {
@@ -32,5 +46,9 @@
   &__subtitle {
     font-family: $font-sans-serif;
     font-size: 1em;
+
+    @include media($bp-md) {
+      font-size: 1.4em;
+    }
   }
 }

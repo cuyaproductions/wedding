@@ -29,3 +29,16 @@ bigDay:
     - label: Where
       value: House on the Hill in Austin, Texas
 
+rsvp:
+  title: RSVP
+  name: Your name
+  size: How many guests?
+  optional: optional
+  yesSingle: I'll be there!
+  yesMultiple: We'll be there
+  noSingle: Sadly, I won't be there
+  yesMultiple: Sadly, we won't be there
+  foodRestrictions: Food restrictions
+  song: Song you'd like to dance to (title and artist)
+  comments: Additional comments
+  send: send

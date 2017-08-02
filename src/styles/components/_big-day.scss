@@ -1,7 +1,7 @@
 .big-day {
   @include container;
   align-items: center;
-  margin-top: rem(30);
+  margin-top: rem(50);
 
   @include media($bp-md) {
     display: flex;
@@ -10,7 +10,7 @@
 
   &__content {
     flex: 0 1 rem(600);
-    margin-bottom: rem(30);
+    margin-bottom: rem(50);
 
     @include media($bp-md) {
       margin-right: 1.5rem;
@@ -41,7 +41,7 @@
       box-shadow: 0rem 1rem 3rem rgba(black, 0.2);
     }
     @include media($bp-md) {
-      width: 80%;
+      width: 70%;
       transform: rotate(-10deg);
     }
 

@@ -1,0 +1,77 @@
+@mixin text-input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $blue;
+  background-color: transparent;
+  padding: 0.3em;
+  border-radius: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 2px 0 $blue;
+    background-color: rgba($blue, 0.1);
+  }
+}
+
+.form {
+  &__group {
+    margin-bottom: 2.5em;
+    position: relative;
+  }
+
+  &__label {
+    display: block;
+
+    &--radio {
+      transform: none;
+      &::before {
+        @include circle(0.8em);
+
+        content: '';
+        display: inline-block;
+        box-shadow: inset 0 0 0 2px white, 0 0 0 2px $blue;
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  &__text {
+    @include text-input;
+  }
+
+  &__select {
+    @include text-input;
+    background-image: url('/static/images/arrow_down.svg');
+    background-repeat: no-repeat;
+    background-size: 0.8em;
+    background-position: center right 0.3em;
+  }
+
+  &__radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+
+    &:focus + label::before {
+      box-shadow: inset 0 0 0 2px rgba($blue, 0.2), 0 0 0 2px $blue;
+    }
+    &:checked + label::before {
+      background-color: $blue;
+    }
+  }
+
+  & &__submit {
+    background-color: $light-blue;
+    padding: 0.5em 1.5em;
+
+    &:hover {
+      background-color: darken($light-blue, 15%);
+    }
+  }
+}

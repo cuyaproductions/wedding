@@ -1,0 +1,59 @@
+{{> header}}
+  <main class="{{className}}__container">
+    <h1 class="{{className}}__title">{{title}}</h1>
+    <form class="form" method="POST">
+      <div class="form__group">
+        <label for="guest" class="form__label">{{name}}</label>
+        <input type="text" id="guest" name="guest" class="form__text" required>
+      </div>
+
+      <div class="form__group">
+        <label for="size" class="form__label">{{size}}</label>
+        <select id="size" name="size" class="form__select" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="form__group">
+        <input type="radio" id="yes" name="name" class="form__radio" required>
+        <label for="yes" class="form__label form__label--radio">{{yesSingle}}</label>
+
+        <input type="radio" id="no" name="name" class="form__radio" required>
+        <label for="no" class="form__label form__label--radio">{{noSingle}}</label>
+      </div>
+
+      <div class="form__group">
+        <label for="foodRestrictions" class="form__label">{{foodRestrictions}}</label>
+        <input type="text" id="foodRestrictions" name="foodRestrictions" class="form__text">
+        <small class="form__optional">{{optional}}</small>
+      </div>
+
+      <div class="form__group">
+        <label for="song" class="form__label">{{song}}</label>
+        <input type="text" id="song" name="song" class="form__text">
+        <small class="form__optional">{{optional}}</small>
+      </div>
+
+      <div class="form__group">
+        <label for="comments" class="form__label">{{comments}}</label>
+        <input type="text" id="comments" name="comments" class="form__text">
+        <small class="form__optional">{{optional}}</small>
+      </div>
+
+      <div class="form__group">
+        <input type="submit" value="{{send}}" class="form__submit">
+      </div>
+    </form>
+ </main>
+ <script>
+  const yesSingle = '{{yesSingle}}';
+  const yesMultiple = '{{yesMultiple}}';
+
+  const noSingle = '{{noSingle}}';
+  const noMultiple = '{{noMultiple}}';
+ </script>
+{{> footer}}
