@@ -1,0 +1,7 @@
+.collapsable {
+  overflow: hidden;
+
+  &--animatable {
+    transition: max-height 250ms ease-out;
+  }
+}

@@ -4,19 +4,11 @@
 @import 'global/layout';
 @import 'global/reset';
 @import 'global/buttons';
+@import 'global/collapsable';
 
 @import 'components/nav';
 @import 'components/hero';
 @import 'components/big-day';
 @import 'components/form';
 
-.rsvp {
-  background: $blue;
-
-  &__container {
-    @include container;
-    box-sizing: border-box;
-    padding: 1em 2em;
-    background-color: white;
-  }
-}
+@import 'pages/rsvp';

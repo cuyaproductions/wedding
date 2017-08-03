@@ -46,7 +46,12 @@ gulp.task('styles', () => {
 
 gulp.task('scripts', () => {
   return gulp.src(resolve(paths.src, paths.scripts, 'app.js'))
-   .pipe(webpack(webpackConfig))
+   .pipe(webpack(webpackConfig(
+      {
+        app: resolve(paths.src, paths.scripts, 'app.js'),
+        rsvp: resolve(paths.src, paths.scripts, 'rsvp.js'), 
+      }
+    )))
    .pipe(gulp.dest(resolve(paths.dist, paths.scripts)))
    .pipe(browserSync.stream());
 });
