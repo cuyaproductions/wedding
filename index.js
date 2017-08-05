@@ -13,6 +13,7 @@ import findLanguage from './middleware/international';
 import configHbs from './config/hbs';
 import configPassport from './config/passport';
 import routes from './routes';
+import './config/db';
 
 const app = express();
 

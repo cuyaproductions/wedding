@@ -1,0 +1,26 @@
+{
+  "search.exclude": {
+    "# Environment files": true,
+    ".env": true,
+    "# Build files": true,
+    "dist/": true,
+    "# NPM packages": true,
+    "node_modules/": true,
+    "# IDE files": true,
+    ".idea": true,
+    "# Other": true,
+    ".DS_store": true
+  },
+  "files.exclude": {
+    "# Environment files": true,
+    ".env": true,
+    "# Build files": true,
+    "dist/": true,
+    "# NPM packages": true,
+    "node_modules/": true,
+    "# IDE files": true,
+    ".idea": true,
+    "# Other": true,
+    ".DS_store": true
+  }
+}

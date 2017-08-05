@@ -9,6 +9,7 @@ node_modules/
 
 # IDE files
 .idea
+.vscode
 
 # Other
 .DS_store

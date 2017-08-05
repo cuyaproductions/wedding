@@ -1,6 +1,7 @@
-const radioInputs = document.querySelectorAll('[name=coming]');
+const radioInputs = document.querySelectorAll('[name=isComing]');
 const additionalInfo = document.querySelector('#additional-info');
-const partySize = document.querySelector('[name=size]');
+const partySize = document.querySelector('[name=partySize]');
+
 const frameRate = 1000 / 40;
 const initialSpeed = 55;
 const easeOutRate = 0.87;
@@ -29,6 +30,7 @@ function animateOpen() {
     if (offsetHeight >= finalHeight) {
       stopTimer();
       additionalInfo.style.height = 'auto';
+      partySize.setAttribute('required', true);
       partySize.focus();
       return;
     }
@@ -45,6 +47,7 @@ function animateClose() {
 
     if (offsetHeight <= 2) {
       stopTimer();
+      partySize.removeAttribute('required');
       additionalInfo.style.height = '0px';
       additionalInfo.style.display = 'none';
       return;

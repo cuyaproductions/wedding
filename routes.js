@@ -1,4 +1,6 @@
 import express from 'express';
+import homeController from './controllers/homeController';
+import rsvpController from './controllers/rsvpController';
 
 function isLoggedIn (request, response, next) {
   if (request.isAuthenticated()) {
@@ -12,18 +14,11 @@ function isLoggedIn (request, response, next) {
 function routes (passport) {
   const router = express.Router();
 
-  router.get('/', (request, response) => {
-    response.render('index', { ...request.content, className: 'index' });
-  });
+  router.get('/', homeController.index);
 
-  router.get('/rsvp', (request, response) => {
-    response.render('rsvp', { ...request.content.rsvp, className: 'rsvp' });
-  });
+  router.get('/rsvp', rsvpController.form);
 
-  router.post('/rsvp', (request, response) => {
-    console.log(request.body);
-    response.render('rsvp', { ...request.content.rsvp, className: 'rsvp' });
-  });
+  router.post('/rsvp', rsvpController.saveRsvp);
 
   // router.get('/login', (request, response) => {
   //   response.render('main', {

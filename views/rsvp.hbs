@@ -4,22 +4,22 @@
       <h1 class="{{className}}__title">{{title}}</h1>
       <form class="form" method="POST">
         <div class="form__group">
-          <label for="guest" class="form__label">{{name}}</label>
-          <input type="text" id="guest" name="guest" class="form__text" required>
+          <label for="name" class="form__label">{{name}}</label>
+          <input type="text" id="name" name="name" class="form__text" required>
         </div>
 
         <div class="form__group form__group--radio">
-          <input type="radio" id="yes" value="yes" name="coming" class="form__radio" required>
+          <input type="radio" id="yes" value="yes" name="isComing" class="form__radio" required>
           <label for="yes" class="form__label form__label--radio">{{yesSingle}}</label>
 
-          <input type="radio" id="no" value="no" name="coming" class="form__radio" required>
+          <input type="radio" id="no" value="no" name="isComing" class="form__radio" required>
           <label for="no" class="form__label form__label--radio">{{noSingle}}</label>
         </div>
 
-        <div id="additional-info">
+        <div id="additional-info" style="height: 0px; display: none">
           <div class="form__group">
-            <label for="size" class="form__label form__label--static">{{size}}</label>
-            <select id="size" name="size" class="form__select" required>
+            <label for="partySize" class="form__label form__label--static">{{size}}</label>
+            <select id="partySize" name="partySize" class="form__select">
               <option value="" selected disabled></option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -35,8 +35,8 @@
           </div>
 
           <div class="form__group">
-            <label for="song" class="form__label">{{song}} <small class="form__optional">{{optional}}</small></label>
-            <input type="text" id="song" name="song" class="form__text">
+            <label for="songRequest" class="form__label">{{song}} <small class="form__optional">{{optional}}</small></label>
+            <input type="text" id="songRequest" name="songRequest" class="form__text">
           </div>
 
           <div class="form__group">
