@@ -9,6 +9,12 @@ const rsvpSchema = new mongoose.Schema({
     required: 'Please provide your name',
   },
 
+  date: {
+    type: Date,
+    required: true,
+    default: Date.now
+  },
+
   isComing: {
     type: Boolean,
     required: 'Please say if you are able to come'
