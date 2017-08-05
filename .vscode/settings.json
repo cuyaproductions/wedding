@@ -1,7 +1,7 @@
 {
   "search.exclude": {
     "# Environment files": true,
-    ".env": true,
+    ".env": false,
     "# Build files": true,
     "dist/": true,
     "# NPM packages": true,
@@ -13,7 +13,7 @@
   },
   "files.exclude": {
     "# Environment files": true,
-    ".env": true,
+    ".env": false,
     "# Build files": true,
     "dist/": true,
     "# NPM packages": true,

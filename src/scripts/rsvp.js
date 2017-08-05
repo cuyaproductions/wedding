@@ -1,5 +1,6 @@
-const radioInputs = document.querySelectorAll('[name=isComing]');
+const form = document.querySelector('#rsvp-form');
 const additionalInfo = document.querySelector('#additional-info');
+const radioInputs = document.querySelectorAll('[name=isComing]');
 const partySize = document.querySelector('[name=partySize]');
 
 const frameRate = 1000 / 40;
@@ -9,6 +10,10 @@ let speed = initialSpeed;
 let isAnimating = false;
 let timer = null;
 
+/**
+ * Clear the timer so that animation timers do not trip over themselves if the uses changes the
+ * input rapidly.
+ */
 function stopTimer() {
   clearTimeout(timer);
   timer = null;
@@ -16,6 +21,9 @@ function stopTimer() {
   isAnimating = false;
 }
 
+/**
+ * Opens the additional information section of the form.
+ */
 function animateOpen() {
   additionalInfo.style.display = 'block';
   additionalInfo.style.height = 'auto';
@@ -40,6 +48,9 @@ function animateOpen() {
   }, frameRate);
 }
 
+/**
+ * Closes the additional information section of the form.
+ */
 function animateClose() {
   timer = setInterval(() => {
     const { offsetHeight } = additionalInfo;
@@ -59,6 +70,11 @@ function animateClose() {
   }, frameRate);
 }
 
+/**
+ * Handles the change in radio buttons to toggle the additional information section open or close.
+ * 
+ * @param {Event} event The event object created from the input change event.
+ */
 function toggleAdditionalInfo(event) {
   const { value } = event.target;
   const areComing = value === 'yes';
@@ -82,4 +98,6 @@ function toggleAdditionalInfo(event) {
   additionalInfo.style.overflow = 'hidden';
   additionalInfo.style.display = 'none';
   additionalInfo.style.height = '0px';
+
+  form.addEventListener('submit', formSubmitHandler);
 })();

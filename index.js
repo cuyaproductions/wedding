@@ -12,7 +12,7 @@ import passport from 'passport';
 import findLanguage from './middleware/international';
 import configHbs from './config/hbs';
 import configPassport from './config/passport';
-import routes from './routes';
+import router from './routes';
 import './config/db';
 
 const app = express();
@@ -40,8 +40,7 @@ app.use(passport.session());
 
 
 app.use('/static', express.static(path.resolve(__dirname, 'dist')));
-app.use('/:lang?', findLanguage);
-app.use('/:lang', routes(passport));
+app.use(router);
 
 app.listen(process.env.PORT, () => {
   console.log(`Listening to port: ${process.env.PORT}`);
