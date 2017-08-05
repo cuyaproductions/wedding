@@ -15,6 +15,13 @@ const Languages = {
 };
 
 /**
+ * A set of accepted languages for easy checking.
+ * 
+ * @type {Set}
+ */
+const acceptedLanguages = new Set(Object.keys(Languages).map(langKey => Languages[langKey]));
+
+/**
  * Parses the Accept-Language header to figure out what language to redirect to.
  *
  * @param {express.Request} request HTTP request object.
@@ -24,7 +31,7 @@ function parseAcceptLanguageHeader(request) {
   const rawHeader = request.get('Accept-Language');
   const matchedLanguages =  rawHeader.match(/(\w{2})(-|;)\w/);
 
-  if (matchedLanguages[1] === Languages.ES) {
+  if (acceptedLanguages.has(matchedLanguages[1])) {
     return matchedLanguages[1];
   }
 
@@ -39,15 +46,16 @@ function parseAcceptLanguageHeader(request) {
  * @param {function} next Calls next middleware.
  */
 function findLanguage (request, response, next) {
+  const { lang } = request.params; 
+
   // If no language was detected, redirect to english
-  if (!request.params.lang) {
+  if (!lang || !acceptedLanguages.has(lang)) {
     const languageToRedirectTo = parseAcceptLanguageHeader(request);
     response.redirect(`/${languageToRedirectTo}${request.originalUrl}`);
     return;
   }
-  const lang = request.params.lang;
 
-  switch (lang.toLocaleLowerCase()) {
+  switch (lang.toLowerCase()) {
     case Languages.ES: {
       request.content = spanish;
       break;
