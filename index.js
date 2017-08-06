@@ -36,7 +36,10 @@ if (process.env.ENV === 'dev') {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+console.log(path.resolve(__dirname, 'dist'));
 app.use('/static', express.static(path.resolve(__dirname, 'dist')));
+app.use('/static', (req, res, next) => {console.log('passed?'); next()});
+
 app.use(sanitizeBody);
 
 app.use(router);
