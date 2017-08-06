@@ -22,7 +22,7 @@ dotenv.config();
 configPassport(passport);
 configHbs(hbs, app);
 
-mongoose.connect(process.env.DB_URI, {useMongoClient: true});
+mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true});
 mongoose.Promise = global.Promise;
 
 mongoose.connection.on('error', (err) => {
