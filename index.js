@@ -4,6 +4,7 @@ import hbs from 'hbs';
 
 import express from 'express';
 import morgan from 'morgan';
+import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import session from 'express-session';
@@ -14,13 +15,19 @@ import sanitizeBody from './middleware/sanitizeBody';
 import configHbs from './config/hbs';
 import configPassport from './config/passport';
 import router from './routes';
-import './config/db';
 
 const app = express();
 
 dotenv.config();
 configPassport(passport);
 configHbs(hbs, app);
+
+mongoose.connect(process.env.DB_URI, {useMongoClient: true});
+mongoose.Promise = global.Promise;
+
+mongoose.connection.on('error', (err) => {
+  console.error(`⚠️ ⚠️ ⚠️ ⚠️  ↠  ${err.message}\n\n`);
+});
 
 app.locals.appName = 'Nic + Diego';
 
