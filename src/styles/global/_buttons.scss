@@ -1,8 +1,7 @@
 button, 
 input[type=button], 
 input[type=submit],
-a,
-.button {
+a {
   cursor: pointer;
 
   &:focus,
@@ -11,10 +10,7 @@ a,
   }
 }
 
-button, 
-input[type=button], 
-input[type=submit],
-.button {
+@mixin button {
   -moz-appearance: none;
   -webkit-appearance: none;
 
@@ -28,6 +24,15 @@ input[type=submit],
   background: none;
   border: none;
   border-radius: 0;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+button, 
+input[type=button], 
+input[type=submit] {
+  @include button;
 }
 
 a {

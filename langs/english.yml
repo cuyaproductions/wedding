@@ -14,9 +14,9 @@ nav:
     - name: FAQ
       link: '#faq'
     - name: RSVP
-      link: rsvp
+      link: /en/rsvp
     - name: 🇨🇴 ES
-      link: /es
+      link: /es/
 
 hero:
   title: We're getting married!
@@ -56,7 +56,8 @@ faq:
       answer: Pardon the cliché, but we'd love if your presence could be our presents for this celebration! If you feel inclined to give a gift to commemorate this event, we would ask that you make a small donation in our honor to GiveWell, which allocates resources to organizations that improve quality of life and save lives around the world.
 
 cta:
-  message: We look forward to seeing you for our big day! Con amor ❤️, Diego and Nic.
+  title: We look forward to seeing you for our big day! 
+  message: Con amor, Diego and Nic.
   button: RSVP
 
 rsvp:
