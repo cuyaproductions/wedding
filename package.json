@@ -9,6 +9,7 @@
   },
   "author": "Diego Hernandez",
   "dependencies": {
+    "babel-cli": "^6.24.1",
     "body-parser": "^1.17.2",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
@@ -21,7 +22,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
-    "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
