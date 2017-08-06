@@ -10,6 +10,7 @@ import session from 'express-session';
 import passport from 'passport';
 
 import findLanguage from './middleware/international';
+import sanitizeBody from './middleware/sanitizeBody';
 import configHbs from './config/hbs';
 import configPassport from './config/passport';
 import router from './routes';
@@ -40,6 +41,8 @@ app.use(passport.session());
 
 
 app.use('/static', express.static(path.resolve(__dirname, 'dist')));
+app.use(sanitizeBody);
+
 app.use(router);
 
 app.listen(process.env.PORT, () => {

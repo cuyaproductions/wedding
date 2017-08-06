@@ -91,13 +91,18 @@ function toggleAdditionalInfo(event) {
 }
 
 (function init() {
+  let areComing = false;
   radioInputs.forEach((input) => {
     input.addEventListener('change', toggleAdditionalInfo);
+
+    if (input.checked && input.value === 'yes') {
+      areComing = true;
+    }
   });
 
-  additionalInfo.style.overflow = 'hidden';
-  additionalInfo.style.display = 'none';
-  additionalInfo.style.height = '0px';
-
-  form.addEventListener('submit', formSubmitHandler);
+  if (!areComing) {
+    additionalInfo.style.overflow = 'hidden';
+    additionalInfo.style.display = 'none';
+    additionalInfo.style.height = '0px';
+  }
 })();

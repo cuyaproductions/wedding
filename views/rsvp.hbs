@@ -1,62 +1,44 @@
-{{> header}}
-  <main class="{{className}}__container">
-    <div class="{{className}}__wrapper">
-      <h1 class="{{className}}__title">{{title}}</h1>
-      <form id="rsvp-form" class="form" method="POST" action="/api/rsvp/create">
-        <div class="form__group">
-          <label for="name" class="form__label">{{name}}</label>
-          <input type="text" id="name" name="name" class="form__text" required>
-        </div>
+{{> rsvpHeader}}
 
-        <div class="form__group form__group--radio">
-          <input type="radio" id="yes" value="yes" name="isComing" class="form__radio" required>
-          <label for="yes" class="form__label form__label--radio">{{yesSingle}}</label>
+<form id="rsvp-form" class="form" method="POST">
+  <div class="form__group">
+    <label for="name" class="form__label">{{name}}</label>
+    <input type="text" id="name" name="name" class="form__text" required>
+  </div>
 
-          <input type="radio" id="no" value="no" name="isComing" class="form__radio" required>
-          <label for="no" class="form__label form__label--radio">{{noSingle}}</label>
-        </div>
+  <div class="form__group form__group--radio">
+    <input type="radio" id="yes" value="yes" name="isComing" class="form__radio" required>
+    <label for="yes" class="form__label form__label--radio">{{yesSingle}}</label>
 
-        <div id="additional-info" style="height: 0px; display: none">
-          <div class="form__group">
-            <label for="partySize" class="form__label form__label--static">{{size}}</label>
-            <select id="partySize" name="partySize" class="form__select">
-              <option value="" selected disabled></option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
+    <input type="radio" id="no" value="no" name="isComing" class="form__radio" required>
+    <label for="no" class="form__label form__label--radio">{{noSingle}}</label>
+  </div>
 
-          <div class="form__group">
-            <label for="foodRestrictions" class="form__label">{{foodRestrictions}} <small class="form__optional">{{optional}}</small></label>
-            <input type="text" id="foodRestrictions" name="foodRestrictions" class="form__text">
-          </div>
-
-          <div class="form__group">
-            <label for="songRequest" class="form__label">{{song}} <small class="form__optional">{{optional}}</small></label>
-            <input type="text" id="songRequest" name="songRequest" class="form__text">
-          </div>
-
-          <div class="form__group">
-            <label for="comments" class="form__label">{{comments}} <small class="form__optional">{{optional}}</small></label>
-            <input type="text" id="comments" name="comments" class="form__text">
-          </div>
-        </div>
-
-        <div class="form__group form__group--last">
-          <input type="submit" value="{{send}}" class="form__submit">
-        </div>
-      </form>
+  <div id="additional-info" style="height: 0px; display: none">
+    <div class="form__group">
+      <label for="otherGuests" class="form__label form__label--static">{{otherGuests}} <small class="form__optional">{{optional}}</small></label>
+      <textarea type="text" id="otherGuests" name="otherGuests" class="form__text"></textarea>
     </div>
- </main>
- <script>
-  const yesSingle = '{{yesSingle}}';
-  const yesMultiple = '{{yesMultiple}}';
 
-  const noSingle = '{{noSingle}}';
-  const noMultiple = '{{noMultiple}}';
- </script>
- <script src="/static/scripts/rsvp.js"></script>
-{{> footer}}
+    <div class="form__group">
+      <label for="foodRestrictions" class="form__label">{{foodRestrictions}} <small class="form__optional">{{optional}}</small></label>
+      <input type="text" id="foodRestrictions" name="foodRestrictions" class="form__text">
+    </div>
+
+    <div class="form__group">
+      <label for="songRequest" class="form__label">{{song}} <small class="form__optional">{{optional}}</small></label>
+      <input type="text" id="songRequest" name="songRequest" class="form__text">
+    </div>
+
+    <div class="form__group">
+      <label for="comments" class="form__label">{{comments}} <small class="form__optional">{{optional}}</small></label>
+      <textarea type="text" id="comments" name="comments" class="form__text"></textarea>
+    </div>
+  </div>
+
+  <div class="form__group form__group--last">
+    <input type="submit" value="{{send}}" class="form__submit">
+  </div>
+</form>
+
+{{> rsvpFooter}}

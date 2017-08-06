@@ -8,20 +8,26 @@ function form(request, response) {
 }
 
 async function createRsvp(request, response) {
+  const { confirmation } = request.content;
   request.body.isComing = (request.body.isComing === 'yes');
+  let message;
+  let title;
 
   try {
     const rsvp = await (new Rsvp(request.body)).save();
-    response.json({
-      success: true,
-      data: rsvp,
-    });
+    const { isComing, name } = rsvp;
+    const firstName = name.split(' ')[0];
+    const { yes, no } = confirmation;
+
+    message = `${isComing ? yes : no} ${firstName}${isComing ? '!' : '.'}`;
+    title = confirmation.title;
   } catch(error) {
-    response.json({
-      success: false,
-      error,
-    });
+    console.error(error);
+    message = confirmation.error;
+    title = confirmation.titleError;
   }
+
+  response.render('confirmation', { message, title, className: 'rsvp'});
 }
 
 export default {

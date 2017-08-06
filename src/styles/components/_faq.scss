@@ -1,0 +1,33 @@
+.faq {
+  &__content {
+    @include container;
+  }
+
+  &__list {
+
+    @include media($bp-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-bottom: 1em;
+
+    @include media($bp-md) {
+      flex: 0 1 calc(50% - 2em);
+      box-sizing: border-box;
+    }
+  }
+
+  &__question {
+    font-family: $font-sans-serif;
+    font-weight: 600;
+    color: $black;
+
+    @include media($bp-md) {
+      font-size: 1.5em;
+    }
+  }
+}

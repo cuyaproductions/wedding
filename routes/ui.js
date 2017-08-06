@@ -9,5 +9,6 @@ router.get('/', homeController.index);
 
 // RSVP Form
 router.get('/rsvp', rsvpController.form);
+router.post('/rsvp', rsvpController.createRsvp);
 
 export default router;

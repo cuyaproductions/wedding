@@ -20,13 +20,14 @@ const rsvpSchema = new mongoose.Schema({
     required: 'Please say if you are able to come'
   },
 
+  otherGuests: {
+    type: String,
+    trim: true,
+  },
+  
   partySize: {
     type: Number,
-    required: function () {
-      return this.isComing ? 'Please say how many people will be joining you' : false;
-    },
-    min: 1,
-    max: 5,
+    required: false,
   },
 
   foodRestrictions: {

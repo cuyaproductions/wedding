@@ -15,6 +15,8 @@ nav:
       link: '#faq'
     - name: Reservación
       link: rsvp
+    - name: 🇺🇸 EN
+      link: /en
 
 hero:
   title: ¡Nos casamos!
@@ -32,14 +34,20 @@ bigDay:
 rsvp:
   title: Reservación
   name: Tu nombre
-  size: ¿Cuántos traes?
-  optional: opcionál
+  otherGuests: ¿A quién mas traés?
+  optional: opcional
   yesSingle: ¡Estaré ahí!
   yesMultiple: ¡Estaremos ahí!
   noSingle: Lamentablemente, no podre ir
   yesMultiple: Lamentablemente, no podremos ir
   foodRestrictions: Alergias alimenticias
-  song: Canción que te gustaría bailar (titulo y artista) 
+  song: ¿Qué canción te hace bailar? (titulo y artista) 
   comments: Comentarios adicionáles
   send: enviar
 
+confirmation:
+  title: Confirmatión
+  titleError: Error
+  yes: ¡Qué bien! Vas a venir 😎. Visita la <a href="/en">página principal</a> para más información y anuncios. ¡Te estaremos esperando,
+  no: ¡Qué triste que no vas a venir! Te echaremos de menos. Gracias por avisarnos,
+  error: ¡Oh no! Se presentó un error procesando tu reservación. Por favor <a href="rsvp" title="Regresar a la forma">intenta otra vez</a>.
