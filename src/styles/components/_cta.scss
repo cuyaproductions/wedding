@@ -3,10 +3,10 @@
 
   &__container {
     @include container;
-    max-width: rem(550);
     color: white;
 
     @include media($bp-md) {
+      max-width: rem(550);
       text-align: center;
     }
   }

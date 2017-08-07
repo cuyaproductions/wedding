@@ -1,4 +1,5 @@
 function nav () {
+  const navListContainer = document.querySelector('.nav__list-container');
   const navList = document.querySelector('.nav__list');
   const navOverlay = document.querySelector('.nav__overlay');
   const navTrigger = document.querySelector('.nav__trigger');
