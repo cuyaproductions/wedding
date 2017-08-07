@@ -9,8 +9,8 @@ nav:
   links:
     - name: The big day
       link: '#big-day'
-    - name: Schedule
-      link: '#schedule'
+    # - name: Schedule
+    #   link: '#schedule'
     - name: FAQ
       link: '#faq'
     - name: RSVP
@@ -30,6 +30,9 @@ bigDay:
       value: Friday, June 29, 2018
     - label: Where
       value: House on the Hill in Austin, Texas
+
+schedule:
+  message: Schedule coming soon.
 
 faq:
   title: Frequently asked questions

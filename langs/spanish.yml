@@ -9,8 +9,8 @@ nav:
   links:
     - name: El gran día
       link: '#big-day'
-    - name: Horario
-      link: '#schedule'
+    # - name: Horario
+    #   link: '#schedule'
     - name: Preguntas frecuenstes
       link: '#faq'
     - name: Reservación
@@ -30,6 +30,9 @@ bigDay:
       value: viernes 29 de junio, 2018
     - label: Dónde
       value: House on the Hill en Austin, Texas, EEUU
+
+schedule:
+  message: Horario viene pronto.
 
 faq:
   title: Preguntas frecuenstes
