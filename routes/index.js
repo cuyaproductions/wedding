@@ -1,11 +1,18 @@
 import express from 'express';
 import uiRouter from './ui';
+import adminRouterConfig from './admin';
 import findLanguage from '../middleware/international';
 
-const router = express.Router();
+function routerConfig(passport) {
+  const router = express.Router();
 
-// UI routing
-router.use('/:lang?', findLanguage);
-router.use('/:lang', uiRouter);
+  router.use('/admin', adminRouterConfig(passport));
 
-export default router;
+  // UI routing
+  router.use('/:lang?', findLanguage);
+  router.use('/:lang', uiRouter);
+
+  return router;
+}
+
+export default routerConfig;

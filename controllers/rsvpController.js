@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import '../models/Rsvp';
 
 const Rsvp = mongoose.model('Rsvp');
 

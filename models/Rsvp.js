@@ -46,4 +46,14 @@ const rsvpSchema = new mongoose.Schema({
   },
 });
 
-mongoose.model('Rsvp', rsvpSchema);
+const Rsvp = mongoose.model('Rsvp', rsvpSchema);
+
+function getAll() {
+  return Rsvp.find();
+}
+
+export default Rsvp;
+
+export {
+  getAll,
+};

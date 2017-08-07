@@ -6,11 +6,16 @@ import express from 'express';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
+import session from 'express-session';
+
+import './models/Rsvp';
 
 import findLanguage from './middleware/international';
 import sanitizeBody from './middleware/sanitizeBody';
 import configHbs from './config/hbs';
-import router from './routes';
+import passport from './config/passport';
+import routerConfig from './routes';
 
 const app = express();
 
@@ -24,6 +29,7 @@ mongoose.connection.on('error', (err) => {
   console.error(`⚠️ ⚠️ ⚠️ ⚠️  ↠  ${err.message}\n\n`);
 });
 
+
 app.locals.appName = 'Nic + Diego';
 
 // Templating settings
@@ -35,11 +41,22 @@ if (process.env.ENV === 'dev') {
 }
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(session({
+  secret: 'beetle dance',
+  resave: false,
+  saveUninitialized: false,
+}));
+
+// Initialize passport.
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 app.use('/static', express.static(path.resolve(__dirname, 'dist')));
 
 app.use(sanitizeBody);
-app.use(router);
+app.use(routerConfig(passport));
 
 app.listen(process.env.PORT, () => {
   console.log(`Listening to port: ${process.env.PORT}`);

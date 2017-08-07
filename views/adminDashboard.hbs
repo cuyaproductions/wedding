@@ -1,0 +1,27 @@
+
+{{> header}}
+  <table class="table">
+    <thead class="table__header">
+      <th class="table__cell table__cell--header">Name</th>
+      <th class="table__cell table__cell--header">Date Added</th>
+      <th class="table__cell table__cell--header">Is Coming</th>
+      <th class="table__cell table__cell--header">Other Guests</th>
+      <th class="table__cell table__cell--header">Food Restrictions</th>
+      <th class="table__cell table__cell--header">Song Request</th>
+      <th class="table__cell table__cell--header">Comments</th>
+    </thead>
+    <tbody>
+      {{#each rsvps as |rsvp|}}
+        <tr class="table__row">
+          <td class="table__cell">{{ rsvp.name }}</td>
+          <td class="table__cell">{{ rsvp.dateAdded }}</td>
+          <td class="table__cell">{{ rsvp.isComing }}</td>
+          <td class="table__cell">{{ rsvp.otherGuests }}</td>
+          <td class="table__cell">{{ rsvp.foodRestrictions }}</td>
+          <td class="table__cell">{{ rsvp.songRequests }}</td>
+          <td class="table__cell">{{ rsvp.comments }}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{> footer}}
