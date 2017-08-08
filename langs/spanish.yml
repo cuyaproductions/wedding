@@ -11,7 +11,7 @@ nav:
       link: '#big-day'
     # - name: Horario
     #   link: '#schedule'
-    - name: Preguntas frecuenstes
+    - name: Preguntas frecuentes
       link: '#faq'
     - name: Reservación
       link: /es/rsvp
@@ -35,9 +35,9 @@ schedule:
   message: Horario viene pronto.
 
 faq:
-  title: Preguntas frecuenstes
+  title: Preguntas frecuentes
   questions: 
-    - question: No hay preguntas todavia en este momento.
+    - question: No hay preguntas en este momento.
       answer: 
 
 cta:

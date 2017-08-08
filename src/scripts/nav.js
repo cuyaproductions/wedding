@@ -1,58 +1,57 @@
-function nav () {
-  const navListContainer = document.querySelector('.nav__list-container');
-  const navList = document.querySelector('.nav__list');
-  const navOverlay = document.querySelector('.nav__overlay');
-  const navTrigger = document.querySelector('.nav__trigger');
+!(function() {
+  const { body } = document;
+  const nav = document.querySelector('.nav');
+  const navListContainer = nav.querySelector('.nav__list-container');
+  const navList = navListContainer.querySelector('.nav__list');
+  const navTrigger = nav.querySelector('.nav__trigger');
+  const navOverlay = nav.querySelector('.nav__overlay');
+  const triggerOpenText = navTrigger.getAttribute('data-open');
+  const triggerCloseText = navTrigger.getAttribute('data-close');
+  const activeNavListContainerClassName = 'nav__list-container--active';
+  let isNavOpen = false;
+  let isAnimating = false;
 
-  navTrigger.addEventListener('click', () => {
-    navOverlay.classList.toggle('nav__overlay--visible');
-    navList.classList.toggle('nav__list--visible');
-    navTrigger.classList.toggle('nav__trigger--active');
-
-    const triggerIsActive = navTrigger.classList.contains('nav__trigger--active');
-    navTrigger.textContent = triggerIsActive ? navTrigger.getAttribute('data-close') 
-      : navTrigger.getAttribute('data-open');
-    
-    navTrigger.style.transform = triggerIsActive ? 
-      `translateX(-${navList.offsetWidth + 3}px) rotate(-90deg)` : null;
-  });
-
-  navOverlay.addEventListener('click', () => {
-    navOverlay.classList.remove('nav__overlay--visible');
-    navList.classList.remove('nav__list--visible');
-    navTrigger.classList.remove('nav__trigger--active');
-
-    navTrigger.textContent = navTrigger.getAttribute('data-open');
-    navTrigger.style.transform = null;
-  });
-
-  const navLinkClassName = 'nav__link';
-  const navLinks = document.querySelectorAll(`.${navLinkClassName}`);
-
-  function highlightActiveNavLink (url) {
-    for (const link of navLinks) {
-      const urlArray = link.href.split('/')
-      const hash = urlArray[urlArray.length - 1];
-
-      if (hash === url) {
-        link.classList.add(`${navLinkClassName}--active`);
-      } else {
-        link.classList.remove(`${navLinkClassName}--active`);
-      }
+  function openMobileNav() {
+    if (!isAnimating) {
+      navListContainer.classList.add(activeNavListContainerClassName);
+      isAnimating = true;
+      setTimeout(() => {
+        nav.classList.add('nav--open');
+        navTrigger.textContent = triggerCloseText;
+        navTrigger.style.transform = `translateX(-${navList.offsetWidth + 3}px) rotate(-90deg)`;
+        body.style.overflow = 'hidden';
+        navOverlay.addEventListener('click', closeMobileNav);
+        isNavOpen = true;
+        isAnimating = false;
+      }, 1);
     }
   }
 
-  function hashChangeHandler() {
-    highlightActiveNavLink(location.hash);
-  }
+  function closeMobileNav() {
+    if (!isAnimating) {
+      nav.classList.remove('nav--open');
+      navTrigger.textContent = triggerOpenText;
+      navTrigger.style.transform = null;
+      body.style.overflow = 'auto';
+      navOverlay.removeEventListener('click', closeMobileNav);
+      isAnimating = true;
 
-  if (navLinks.length) {
-    window.addEventListener('hashchange', hashChangeHandler);
-
-    if (location.hash) {
-      highlightActiveNavLink(location.hash);
+      setTimeout(() => {
+        navListContainer.classList.remove(activeNavListContainerClassName);
+        isNavOpen = false;
+        isAnimating = false;
+      }, 1);
     }
   }
-}
 
-export default nav;
+  navTrigger.addEventListener('click', () => isNavOpen ? closeMobileNav() : openMobileNav());
+  navList.addEventListener('click', (event) => { 
+    if (event.target.classList.contains('nav__link')) {
+      closeMobileNav();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 750 && isNavOpen)  closeMobileNav();
+  });
+})();
