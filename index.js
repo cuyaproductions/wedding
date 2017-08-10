@@ -30,8 +30,6 @@ mongoose.connection.on('error', (err) => {
 });
 
 
-app.locals.appName = 'Nic + Diego';
-
 // Templating settings
 app.engine('hbs', hbs.__express);
 app.set('view engine', 'hbs');
