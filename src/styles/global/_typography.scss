@@ -12,6 +12,9 @@ $font-sans-serif: 'Dosis', sans-serif;
 
 html {
   font-size: #{$font-size}px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {

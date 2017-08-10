@@ -12,6 +12,7 @@ import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import webpack from 'gulp-webpack';
+import favicons from 'gulp-favicons';
 
 import webpackConfig from './webpack.config.js';
 import dotevn from 'dotenv';
@@ -59,6 +60,12 @@ gulp.task('scripts', () => {
 gulp.task('images', () => {
   return gulp.src(resolve(paths.src, paths.images, '**/*'))
    .pipe(gulp.dest(resolve(paths.dist, paths.images)));
+});
+
+gulp.task('favicons', () => {
+  return gulp.src(resolve(paths.src, paths.images, 'favicon.png'))
+    .pipe(favicons())
+    .pipe(gulp.dest(resolve(paths.dist)));
 });
 
 gulp.task('dev', () => {
