@@ -5,6 +5,7 @@ import hbs from 'hbs';
 import express from 'express';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
+import compression from 'compression';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
@@ -38,6 +39,7 @@ if (process.env.ENV === 'dev') {
   app.use(morgan('dev'));
 }
 
+app.use(compression());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(session({
