@@ -6,6 +6,10 @@ import findLanguage from '../middleware/international';
 function routerConfig(passport) {
   const router = express.Router();
 
+  router.get('/robots.txt', (request, response) => {
+    response.send('User-agent: *\
+    Disallow: /');
+  });
   router.use('/admin', adminRouterConfig(passport));
 
   // UI routing

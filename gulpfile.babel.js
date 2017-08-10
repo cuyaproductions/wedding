@@ -63,21 +63,28 @@ gulp.task('images', () => {
 });
 
 gulp.task('favicons', () => {
-  return gulp.src(resolve(paths.src, paths.images, 'favicon.png'))
-    .pipe(favicons({
-        icons: {
-            android: true,              // Create Android homescreen icon. `boolean` or `{ offset, background, shadow }`
-            appleIcon: true,            // Create Apple touch icons. `boolean` or `{ offset, background }`
-            appleStartup: true,         // Create Apple startup images. `boolean` or `{ offset, background }`
-            coast: { offset: 25 },      // Create Opera Coast icon with offset 25%. `boolean` or `{ offset, background }`
-            favicons: true,             // Create regular favicons. `boolean`
-            firefox: true,              // Create Firefox OS icons. `boolean` or `{ offset, background }`
-            windows: true,              // Create Windows 8 tile icons. `boolean` or `{ background }`
-            yandex: true                // Create Yandex browser icon. `boolean` or `{ background }`
-        }
-    }))
-    .pipe(gulp.dest(resolve(paths.dist)));
+  if (process.env.ENV !== 'dev') {
+    return gulp.src(resolve(paths.src, paths.images, 'favicon.png'))
+      .pipe(favicons({
+          icons: {
+              android: true,              // Create Android homescreen icon. `boolean` or `{ offset, background, shadow }`
+              appleIcon: true,            // Create Apple touch icons. `boolean` or `{ offset, background }`
+              appleStartup: true,         // Create Apple startup images. `boolean` or `{ offset, background }`
+              coast: { offset: 25 },      // Create Opera Coast icon with offset 25%. `boolean` or `{ offset, background }`
+              favicons: true,             // Create regular favicons. `boolean`
+              firefox: true,              // Create Firefox OS icons. `boolean` or `{ offset, background }`
+              windows: true,              // Create Windows 8 tile icons. `boolean` or `{ background }`
+              yandex: true                // Create Yandex browser icon. `boolean` or `{ background }`
+          }
+      }))
+      .pipe(gulp.dest(resolve(paths.dist)));
+  }
 });
+
+// gulp.task('robots', () => {
+//   gulp.src(resolve(paths.src, 'robots.txt'))
+//     .pipe(gulp.resolve(paths.dist));
+// });
 
 gulp.task('dev', () => {
   let started = false;
