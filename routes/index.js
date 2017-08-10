@@ -7,8 +7,8 @@ function routerConfig(passport) {
   const router = express.Router();
 
   router.get('/robots.txt', (request, response) => {
-    response.send('User-agent: *\
-    Disallow: /');
+    response.set('Content-Type', 'text/plain');
+    response.send('User-agent: *\nDisallow: /');
   });
   router.use('/admin', adminRouterConfig(passport));
 

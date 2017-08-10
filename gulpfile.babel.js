@@ -81,11 +81,6 @@ gulp.task('favicons', () => {
   }
 });
 
-// gulp.task('robots', () => {
-//   gulp.src(resolve(paths.src, 'robots.txt'))
-//     .pipe(gulp.resolve(paths.dist));
-// });
-
 gulp.task('dev', () => {
   let started = false;
 
