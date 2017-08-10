@@ -11,8 +11,8 @@ nav:
       link: '#big-day'
     # - name: Schedule
     #   link: '#schedule'
-    - name: FAQ
-      link: '#faq'
+    - name: More info
+      link: '#more-info'
     - name: RSVP
       link: /en/rsvp
     - name: <img src="/static/images/colombia_flag.svg" class="nav__flag" /> ES
@@ -34,8 +34,8 @@ bigDay:
 schedule:
   message: Schedule coming soon.
 
-faq:
-  title: Frequently asked questions
+moreInfo:
+  title: More information
   questions:
     - question: Who will be there?
       answer: We are inviting our families and closest friends to join us as we all become one big happy family.

@@ -11,8 +11,8 @@ nav:
       link: '#big-day'
     # - name: Horario
     #   link: '#schedule'
-    - name: Preguntas frecuentes
-      link: '#faq'
+    - name: Más información
+      link: '#more-info'
     - name: Reservación
       link: /es/rsvp
     - name: <img src="/static/images/us_flag.svg" class="nav__flag" /> EN
@@ -34,8 +34,8 @@ bigDay:
 schedule:
   message: Horario viene pronto.
 
-faq:
-  title: Preguntas frecuentes
+moreInfo:
+  title: Más información
   questions: 
     - question: No hay preguntas en este momento.
       answer: 
