@@ -38,23 +38,23 @@ faq:
   title: Frequently asked questions
   questions:
     - question: Who will be there?
-      answer: We are inviting our families and closest family friends to join us as we all become one big happy family.
+      answer: We are inviting our families and closest friends to join us as we all become one big happy family.
     - question: Do I need a visa?
-      answer: If you do not live in the United States and are not an American citizen, you might need a visa or entry permit. Please check with your closest American embassy to see if you need to apply for a visa. This can take months to accomplish so we recommend applying as soon as possible. We wouldn't want you to miss our wedding!
+      answer: If you do not live in the United States and are not a United States citizen, you might need a visa or entry permit. Please check with your closest United States embassy to see if you need to apply for a visa. This can take months to accomplish so we recommend applying as soon as possible. We wouldn't want you to miss our wedding!
     - question: How do I get to Austin?
-      answer: The Austin Bergstrom International Airport (ABIA) is the primary way to get to Austin from outside of Texas. The airport is located 10 miles from downtown, and 17 miles from the wedding venue.
+      answer: The Austin-Bergstrom International Airport (AUS) is the primary way to get to Austin from outside of Texas. The airport is 10 miles from downtown, and 17 miles from the wedding venue.
     - question: Where will I stay in Austin?
-      answer: There are many great hotels as well as numerous rental options through <a href="https://www.airbnb.com/s/Austin--TX--United-States/homes?checkin=2018-06-27&checkout=2018-07-02&adults=2&guests=2&allow_override%5B%5D=&s_tag=4GGBuMRA">AirBnB</a> and <a href="https://www.homeaway.com/results/texas/austin/region:7116/arrival:2018-06-27/departure:2018-07-02/minSleeps/2">Homeaway</a>. We recommend staying in the hill country near the wedding venue, or in downtown Austin. We're getting a block of rooms at the Embassy Suites Hotel downtown, more details on this to follow.
+      answer: There are many great hotels as well as numerous rental options through <a href="https://www.airbnb.com/s/Austin--TX--United-States/homes?checkin=2018-06-27&checkout=2018-07-02&adults=2&guests=2&allow_override%5B%5D=&s_tag=4GGBuMRA">Airbnb</a> and <a href="https://www.homeaway.com/results/texas/austin/region:7116/arrival:2018-06-27/departure:2018-07-02/minSleeps/2">HomeAway</a>. We recommend staying in the hill country near the wedding venue, or in downtown Austin. We're getting a block of rooms at the Embassy Suites Hotel downtown; more details on this will follow.
     - question: How will I get around Austin?
-      answer: We recommend using services such as Uber, Lyft, Fasten, or Ride Austin as it is hard to get around without a vehicle. Use the site <a href="https://ride.guru/">Ride.Guru</a> to find the best rate for any short trip to get around. For a four-seater, it shouldn't cost more than $20 to get from downtown to the wedding venue. In addition, there are multiple car rental options at the airport.
+      answer: We recommend using services such as Uber, Lyft, Fasten, or Ride Austin as it is difficult to get around without a vehicle. Use the site <a href="https://ride.guru/">Ride.Guru</a> to find the best rate for any short trip. For a four-seater, it shouldn't cost more than $20 to get from downtown to the wedding venue. In addition, there are multiple car rental options at the airport.
     - question: What is the wedding venue like?
-      answer: Our wedding will take place at House on the Hill, which is a spacious, kitschy, woodsy house located in the hill country of west Austin.
+      answer: Our wedding will take place at <a href="http://houseonthehillaustin.com/">House on the Hill</a>, which is a spacious, kitschy, woodsy house located in the hill country of west Austin.
     - question: What should I wear?
-      answer: The wedding is in June, which is the middle of the hot Texas summer. We plan to dress only semi-formally, and have no dress code in mind - please dress as comfortably and stylish as you want. The wedding venue has a pool (which you are more than welcome to use!) and we plan to have ample water for guests to cool off throughout the duration of your time out here. In addition, the main house on the property is air conditioned.
+      answer: The wedding is in June, which is the middle of the hot Texas summer. We plan to dress only semi-formally, and have no dress code in mind - please dress as comfortably and stylishly as you want. The venue has a pool (which you are more than welcome to use!), and we plan to have ample water for guests to cool off. In addition, the main house on the property is air-conditioned.
     - question: What is Austin like?
-      answer: "Austin is a trendy city with plenty of great food to try and beautiful nature to explore. In late June it can be really hot, with temperatures often topping 100 degrees Farenheit in the late afternoon. Fortunately there are many ways to enjoy water, with multiple natural springs to swim in near downtown (at a constant 70 degree Farenheit water year-round) as well as various places to rent kayaks and paddleboards. Also, there are two types of food Austin does best: tacos and barbecue. We'd be happy to give recommendations!"
+      answer: "Austin is a trendy city with plenty of great food to try and beautiful nature to explore. In late June it can be really hot, with temperatures often topping 100 degrees Fahrenheit in the late afternoon. Fortunately there are many ways to enjoy water, with multiple natural springs to swim in near downtown (at a constant 70 degree Fahrenheit water year-round) as well as various places to rent kayaks and paddleboards. Also, there are two types of food Austin does best: tacos and barbecue. We'd be happy to give recommendations!"
     - question: Where is the wedding registry?
-      answer: Pardon the cliché, but we'd love if your presence could be our presents for this celebration! If you feel inclined to give a gift to commemorate this event, we would ask that you make a small donation in our honor to <a href="http://www.givewell.org/donate">GiveWell</a>, which allocates resources to organizations that improve quality of life and save lives around the world.
+      answer: Pardon the cliché, but we simply want your presence at our celebration. We don’t need material items, and having you with us at our celebration is a huge gift! If you feel inclined to do something to commemorate this event, we would ask that you make a small donation in our honor to <a href="https://secure.givewell.org/support-givewell">GiveWell</a>, which allocates resources to organizations that improve quality of life and save lives around the world.
 
 cta:
   title: We look forward to seeing you for our big day! 
@@ -78,6 +78,6 @@ rsvp:
 confirmation:
   title: Confirmation
   titleError: Error
-  yes: Yay! You're coming 😎. Visit the <a href="/en">homepage</a> more information and updates. We can't wait to see you there,
+  yes: Yay! You're coming 😎. Visit the <a href="/en">homepage</a> for more information and updates. We can't wait to see you there,
   no: So sad you won't make it! You will definitely be missed. Thanks for letting us know,
   error: Oh no! There was an error processing your RSVP. Please <a href="rsvp" title="Go back to RSVP form">try again</a>.
