@@ -17,8 +17,9 @@ async function createRsvp(request, response) {
     const { isComing, name } = rsvp;
     const firstName = name.split(' ')[0];
     const { yes, no } = confirmation;
+    const firstNameWrapped = `<span class="capitalize">${firstName}</span>`;
 
-    message = `${isComing ? yes : no} ${firstName}${isComing ? '!' : '.'}`;
+    message = `${isComing ? yes : no} ${firstNameWrapped}${isComing ? '!' : '.'}`;
     title = confirmation.title;
   } catch(error) {
     console.error(error);
