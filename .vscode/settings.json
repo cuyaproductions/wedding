@@ -12,15 +12,15 @@
     ".DS_store": true
   },
   "files.exclude": {
-    "# Environment files": true,
+    "# Environment files": false,
     ".env": false,
-    "# Build files": true,
-    "dist/": true,
-    "# NPM packages": true,
-    "node_modules/": true,
-    "# IDE files": true,
-    ".idea": true,
-    "# Other": true,
-    ".DS_store": true
+    "# Build files": false,
+    "dist/": false,
+    "# NPM packages": false,
+    "node_modules/": false,
+    "# IDE files": false,
+    ".idea": false,
+    "# Other": false,
+    ".DS_store": false
   }
 }
