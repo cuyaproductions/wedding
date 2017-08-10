@@ -15,7 +15,7 @@ nav:
       link: '#faq'
     - name: RSVP
       link: /en/rsvp
-    - name: 🇨🇴 ES
+    - name: <img src="/static/images/colombia_flag.svg" class="nav__flag" /> ES
       link: /es/
 
 hero:

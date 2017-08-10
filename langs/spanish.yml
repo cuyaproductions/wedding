@@ -15,7 +15,7 @@ nav:
       link: '#faq'
     - name: Reservación
       link: /es/rsvp
-    - name: 🇺🇸 EN
+    - name: <img src="/static/images/us_flag.svg" class="nav__flag" /> EN
       link: /en/
 
 hero:
