@@ -64,6 +64,8 @@ cta:
   button: RSVP
 
 rsvp:
+  event:
+    title: RSVP to Diego and Nic's wedding
   title: RSVP
   name: Your name
   otherGuests: Who else are you bringing?

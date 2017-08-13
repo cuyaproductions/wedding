@@ -1,6 +1,7 @@
 lang: es
 title: Nic + Diego
 event:
+  title: \!Nic & Diego se casan!
   date: 29 de junio, 2018
   city: Austin, Texas, EEUU
 
@@ -65,6 +66,8 @@ cta:
   button: RSVP
 
 rsvp:
+  event:
+    title: Has tu reservación para la boda de Nic y Diego
   title: Reservación
   name: Tu nombre
   otherGuests: ¿A quién mas traés?
