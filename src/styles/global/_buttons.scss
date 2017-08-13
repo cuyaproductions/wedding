@@ -20,6 +20,7 @@ a {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
+  text-decoration: none;
   
   background: none;
   border: none;
@@ -37,9 +38,4 @@ input[type=submit] {
 
 a {
   color: $brown;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
