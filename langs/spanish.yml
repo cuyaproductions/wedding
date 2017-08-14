@@ -11,8 +11,8 @@ nav:
   links:
     - name: El gran día
       link: '#big-day'
-    # - name: Horario
-    #   link: '#schedule'
+    - name: Horario
+      link: '#schedule'
     - name: Más información
       link: '#more-info'
     - name: Reservación
@@ -31,7 +31,7 @@ bigDay:
     - label: Cuándo
       value: viernes 29 de junio, 2018
     - label: Dónde
-      value: House on the Hill en Austin, Texas, EEUU
+      value: <a href="http://houseonthehillaustin.com/">House on the Hill</a> en Austin, Texas, EEUU
 
 schedule:
   title: Horario
@@ -67,23 +67,23 @@ moreInfo:
       - Si no vives en los EEUU ni eres un ciudadano de este país, probablemente necesitas solicitar una visa o permiso de entrada. Por favor dirígete a la embajada de los EEUU más cercana en el caso que necesites aplicar por un visado. Este tramite puede tomar varios meses, por lo tanto, te recomendamos que lo hagas lo más pronto posible. ¡No queremos que se pierdan nuestra boda!
     - question: ¿Cómo se llega a Austin?
       answer:
-      - La manera más conveniente de llegar a Austin es por medio del aeropuerto internacional “Austin-Bergstrom International Airport (AUS)” si no viven en Texas. Este aeropuerto está a 16km del centro de Austin y a 27km del lugar en donde se celebrará la boda.
+      - La manera más conveniente de llegar a Austin es por medio del aeropuerto internacional <em>Austin-Bergstrom International Airport (AUS)</em> si no viven en Texas. Este aeropuerto está a 16km del centro de Austin y a 27km del lugar en donde se celebrará la boda.
     - question: ¿En dónde me puedo hospedar en Austin?
       answer:
-      - Austin cuenta con grandes cadenas hoteleras y numerosas opciones de hospedaje como <a href="https://www.airbnb.com/s/Austin--TX--United-States/homes?checkin=2018-06-27&checkout=2018-07-02&adults=2&guests=2&allow_override%5B%5D=&s_tag=4GGBuMRA">Airbnb</a> y <a href="https://www.homeaway.com/results/texas/austin/region:7116/arrival:2018-06-27/departure:2018-07-02/minSleeps/2">HomeAway</a>. Recomendamos que se hospeden en hill country cerca de donde se realizara la boda, o en el centro de Austin.
+      - Austin cuenta con grandes cadenas hoteleras y numerosas opciones de hospedaje como <a href="https://www.airbnb.com/s/Austin--TX--United-States/homes?checkin=2018-06-27&checkout=2018-07-02&adults=2&guests=2&allow_override%5B%5D=&s_tag=4GGBuMRA">Airbnb</a> y <a href="https://www.homeaway.com/results/texas/austin/region:7116/arrival:2018-06-27/departure:2018-07-02/minSleeps/2">HomeAway</a>. Recomendamos que se hospeden en <em>hill country</em> y Westlake cerca de donde se realizara la boda, o en el centro de Austin.
       - Tenemos un bloque de suites disponibles para nuestros invitados en el <a href="http://embassysuites.hilton.com/en/es/groups/personalized/A/AUSLKES-DNW-20180627/index.jhtml">Embassy Suites downtown</a>. Las suites cuestan $189USD por noche para una suite con cama de tamaño king y sofa cama doble; o por $209USD por noche para una suite con dos camas de tamaño queen y sofa cama doble. Estas habitaciones vienen con wi-fi, el desayuno y <em>happy hour </em>  todas las noches complementarios. Viendo que estas habitaciones pueden acomodar varias personas, recomendamos hospedarse con otros invitados; Avísenos si quieren hacer una reservación en grupo y les podemos sugerir otros familiares o amigos con quien se pueda compartir una suite.
     - question: ¿Cómo me puedo transportar en Austin?
       answer:
       - Recomendamos usar servicios como Uber, Lyft, Fasten y Ride Austin, pues bien, es difícil moverse en la ciudad sin tener un vehículo. Pueden usar <a href="https://ride.guru/">Ride.Guru</a>, ahí se consiguen los mejores precios para viajes cortos. Un vehículo para cuatro personas no debe costar más de $20USD del centro de Austin al sitio donde se celebrara la boda. Adicionalmente, existen muchas opciones para alquilar un vehículo en el aeropuerto.
     - question: ¿Cómo es el lugar donde se relazara la boda?
       answer:
-      - La boda se realizará en <a href="http://houseonthehillaustin.com/">House on the Hill</a>, éste es un lugar campestre, abierto y con una casa rústica. House on the Hill está localizada en hill country al occidente de Austin. 
+      - La boda se realizará en <a href="http://houseonthehillaustin.com/">House on the Hill</a>, éste es un lugar campestre, abierto y con una casa rústica. House on the Hill está localizada en <em>hill country</em> al occidente de Austin. 
     - question: ¿Cómo me debo vestir?
       answer:
       - La boda es en junio, esto es en pleno verano con temperaturas muy calientes. Nosotros dos vestiremos medio-formales, no requerimos ningún código de etiqueta. Por favor vístanse de la manera más cómoda y con el estilo que prefieran. La casa tiene piscina, (pueden hacer uso de ella), vamos a tener mucha agua disponible para que se refresquen, además la casa principal cuenta con aire acondicionado.
     - question: ¿Cómo es Austin?
       answer:
-      - Austin es una ciudad emprendedora y popular. Austin cuenta con una gran variedad de restaurantes internacionales además está llena de belleza natural que vale la pena explorar. A finales de junio la temperatura es realmente caliente algunas veces sube a más de 38 °C. Afortunadamente existen maneras de refrescarse en el verano, en Austin encontramos manantiales naturales con aguas a temperaturas alrededor de 20 °C en las que se puede nadar. También puedes disfrutar de actividades como Kayaks y botes de remo. Adicionalmente en la gastronomía de Austin encontramos los mejores tacos y barbacoas. Nos encantaría recomendarles los mejores sitios para que disfruten del sabor y las actividades de esta ciudad.
+      - Austin es una ciudad emprendedora y popular. Austin cuenta con una gran variedad de restaurantes internacionales además está llena de belleza natural que vale la pena explorar. A finales de junio la temperatura es realmente caliente algunas veces sube a más de 38 °C. Afortunadamente existen maneras de refrescarse en el verano, en Austin encontramos manantiales naturales con aguas a temperaturas alrededor de 20 °C en las que se puede nadar. También puedes disfrutar de actividades como kayaks y botes de remo. Adicionalmente en la gastronomía de Austin encontramos los mejores tacos y barbacoas. Nos encantaría recomendarles los mejores sitios para que disfruten del sabor y las actividades de esta ciudad.
     - question: ¿Dónde está registrada la lista de regalos de novios?
       answer:
       - Perdonen el cliché, pero sólo queremos su presencia en nuestra celebración de boda. Nosotros no requerimos regalos materiales, su presencia en nuestra boda es un regalo grandioso. Sin embargo, si a usted le gustaría hacer algo para la conmemoración de este día, podría dar una pequeña donación en nuestro honor a <a href="https://secure.givewell.org/">GiveWell</a>; esta organización utiliza los recursos para ayudar a mejorar y salvar vidas alrededor del mundo. 
@@ -92,7 +92,7 @@ moreInfo:
 
 cta:
   title: ¡Esperamos verte en nuestro gran día!
-  message: With love, Nic y Diego.
+  message: <em>With love</em>, Nic y Diego.
   button: RSVP
 
 rsvp:

@@ -58,6 +58,7 @@
     background-color: $light-blue;
     padding: 0.5em 1em;
     color: $black;
+    outline-offset: -1px;
 
     &--active {
       background-color: white;
@@ -72,7 +73,7 @@
 
     &--active {
       background-color: white;
-      box-shadow: 0 0 1.5em rgba($black, 0.2);
+      box-shadow: 0.1em 0.2em 0.3em rgba($black, 0.04);
       position: relative;
       z-index: 1;
 

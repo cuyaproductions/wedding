@@ -11,8 +11,8 @@ nav:
   links:
     - name: The big day
       link: '#big-day'
-    # - name: Schedule
-    #   link: '#schedule'
+    - name: Schedule
+      link: '#schedule'
     - name: More info
       link: '#more-info'
     - name: RSVP
@@ -31,7 +31,7 @@ bigDay:
     - label: When
       value: Friday, June 29, 2018
     - label: Where
-      value: House on the Hill in Austin, Texas
+      value: <a href="http://houseonthehillaustin.com/">House on the Hill</a> in Austin, Texas
 
 schedule:
   title: Schedule
@@ -69,7 +69,7 @@ moreInfo:
         - The Austin-Bergstrom International Airport (AUS) is the primary way to get to Austin from outside of Texas. The airport is 10 miles from downtown, and 17 miles from the wedding venue.
     - question: Where will I stay in Austin?
       answer:
-      - There are many great hotels as well as numerous rental options through <a href="https://www.airbnb.com/s/Austin--TX--United-States/homes?checkin=2018-06-27&checkout=2018-07-02&adults=2&guests=2&allow_override%5B%5D=&s_tag=4GGBuMRA">Airbnb</a> and <a href="https://www.homeaway.com/results/texas/austin/region:7116/arrival:2018-06-27/departure:2018-07-02/minSleeps/2">HomeAway</a>.
+      - There are many great hotels as well as numerous rental options through <a href="https://www.airbnb.com/s/Austin--TX--United-States/homes?checkin=2018-06-27&checkout=2018-07-02&adults=2&guests=2&allow_override%5B%5D=&s_tag=4GGBuMRA">Airbnb</a> and <a href="https://www.homeaway.com/results/texas/austin/region:7116/arrival:2018-06-27/departure:2018-07-02/minSleeps/2">HomeAway</a>. We recommend staying in the hill country and Westlake near the wedding venue, or in downtown Austin.  
       - We have a block of suites available for our guest at the <a href="http://embassysuites.hilton.com/en/es/groups/personalized/A/AUSLKES-DNW-20180627/index.jhtml">Embassy Suites downtown</a>. The suites can be reserved for $189 / night for suites with a king bed and a full-sized pull out; or for $209 / night for suites with two queen beds and a full-sized pull out. These rooms come with complimentary wi-fi, breakfast, and happy hour each night. Because these are suites, we recommend pairing up with other guests; let us know if you'd like to do this so we can suggest attending relatives or friends you can share a suite with.
     - question: How will I get around Austin?
       answer: 
@@ -89,7 +89,7 @@ moreInfo:
 
 cta:
   title: We look forward to seeing you for our big day! 
-  message: Con amor, Diego and Nic.
+  message: <em>Con amor</em>, Diego and Nic.
   button: RSVP
 
 rsvp:
