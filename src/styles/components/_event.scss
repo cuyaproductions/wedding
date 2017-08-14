@@ -1,0 +1,31 @@
+.event {
+  margin-bottom: 2em;
+
+  @include media($bp-sm) {
+    display: flex;
+  }
+
+  &__time {
+    @include h4;
+
+    font-family: $font-sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+
+    color: $black;
+
+    @include media($bp-sm) {
+      margin-right: 1em;
+    }
+  }
+
+  &__title {
+    font-family: $font-sans-serif;
+    font-weight: 600;
+    color: $black;
+  }
+
+  &__description {
+    margin-bottom: 0;
+  }
+}

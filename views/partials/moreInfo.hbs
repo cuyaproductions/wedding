@@ -1,13 +1,17 @@
-<section class="section more-info" id="more-info">
-  <div class="more-info__content">
-    <h1 class="more-info__title">{{ moreInfo.title }}</h1>
-    <ul class="more-info__list">
-      {{#each moreInfo.questions}}
-        <li class="more-info__item">
-          <h2 class="more-info__question">{{ question }}</h2>
-          <p class="more-info__answer">{{{ answer }}}</p>
-        </li>
-      {{/each}}
-    </ul>
-  </div>
-</section>
+{{#with moreInfo}}
+  <section class="section more-info" id="more-info">
+    <div class="more-info__content">
+      <h1 class="more-info__title">{{ title }}</h1>
+      <ul class="more-info__list">
+        {{#each questions}}
+          <li class="more-info__item">
+            <h2 class="more-info__question">{{ question }}</h2>
+            {{#each answer}}
+              <p class="more-info__answer">{{{ this }}}</p>
+            {{/each}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+{{/with}}

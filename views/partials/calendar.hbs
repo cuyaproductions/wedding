@@ -1,0 +1,32 @@
+<div class="calendar">
+  <nav class="calendar__navigation">
+    <ul class="calendar__tabs">
+      {{#each dates}}
+        <li class="calendar__tab">
+          <a class="calendar__button" href="#{{ day }}">
+            <span class="calendar__day">{{ day }}</span>
+            <span class="calendar__date">{{ date }}</span>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </nav>
+  <div class="calendar__container">
+    {{#each dates}}
+      <div class="calendar__content" id="{{ day }}">
+        <h2 class="calendar__date-title">{{ day }} {{ date }}</h2>
+        {{#if events}}
+          <ul class="calendar__events">
+            {{#each events}}
+            <li class="calendar__event">
+                {{> event}}
+            </li>
+            {{/each}}
+          </ul>
+        {{else}}
+          {{ ../noEvents }}
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+</div>

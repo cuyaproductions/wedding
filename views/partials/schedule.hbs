@@ -1,3 +1,8 @@
-<section class="section schedule" id="schedule">
-  <div class="schedule__container">{{ message }}</div>
-</section>
+{{#with schedule}}
+  <section class="section schedule" id="schedule">
+    <div class="schedule__container">
+      <h1>{{ title }}</h1>
+      {{> calendar}}
+    </div>
+  </section>
+{{/with}}

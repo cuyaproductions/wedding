@@ -38,34 +38,34 @@ textarea {
   font-weight: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+@mixin header($size, $size-sm, $size-md) {
   margin: 0 0 0.5em;
 
   font-family: $font-serif;
+  font-size: $size;
   font-weight: 400;
   line-height: 1.2;
-
   color: $blue;
+
+  @include media($bp-sm) {
+    font-size: $size-sm;
+  }
+
+  @include media($bp-md) {
+    font-size: $size-md;
+  }
 }
 
-h1 { font-size: 1.602em; }
-h2 { font-size: 1.424em; }
-h3 { font-size: 1.266em; }
-h4 { font-size: 1.125em; }
+@mixin h1 { @include header(1.602em, 2.074em, 2.441em); }
+@mixin h2 { @include header(1.424em, 1.728em, 1.953em); }
+@mixin h3 { @include header(1.266em, 1.44em, 1.563em); }
+@mixin h4 { @include header(1.125em, 1.2em, 1.25em); }
 
-@include media($bp-sm) {
-  h1 { font-size: 2.074em; }
-  h2 { font-size: 1.728em; }
-  h3 { font-size: 1.44em; }
-  h4 { font-size: 1.2em; }
-}
+h1 { @include h1; }
+h2 { @include h2; }
+h3 { @include h3; }
+h4 { @include h4; }
 
-@include media($bp-md) {
-  h1 { font-size: 2.441em; }
-  h2 { font-size: 1.953em; }
-  h3 { font-size: 1.563em; }
-  h4 { font-size: 1.25em; }
-}
 
 ul, ol {
   margin: 0;

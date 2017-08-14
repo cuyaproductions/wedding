@@ -1,0 +1,105 @@
+.calendar {
+  @include media($bp-md) {
+    display: flex;
+    align-content: stretch;
+    height: 100%;
+  }
+
+  &__navigation {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    align-content: stretch;
+    overflow-x: auto;
+
+    @include media($bp-md) {
+      display: block;
+    }
+  }
+
+  &__tab {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.2em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include media($bp-md) {
+      margin-right: 0;
+      margin-bottom: 0.3em;
+    }
+  }
+
+  &__day {
+    @include h3;
+    display: none;
+    margin-bottom: 0.1em;
+
+    @include media($bp-md) {
+      display: block;
+    }
+  }
+
+  &__button {
+    @include button;
+    display: block;
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: $light-blue;
+    padding: 0.5em 1em;
+    color: $black;
+
+    &--active {
+      background-color: white;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__container {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+
+    &--active {
+      background-color: white;
+      box-shadow: 0 0 1.5em rgba($black, 0.2);
+      position: relative;
+      z-index: 1;
+
+      @include media($bp-md) {
+        height: rem(450);
+        overflow: scroll;
+      }
+    }
+  }
+
+  &__content {
+    background-color: white;
+    padding: 1.4em;
+    margin-bottom: 0.9em;
+
+    &--inactive {
+      display: none;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__date-title {
+    &--inactive {
+      display: none;
+    }
+  }
+}
