@@ -1,6 +1,12 @@
 .big-day {
   @include container;
   align-items: center;
+  padding-bottom: 0;
+
+  @include media($bp-sm) {
+    margin-top: 2em;
+    padding-bottom: 1em;
+  }
 
   @include media($bp-md) {
     display: flex;
