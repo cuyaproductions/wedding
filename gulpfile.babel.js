@@ -85,7 +85,7 @@ gulp.task('dev', () => {
   let started = false;
 
   nodemon({
-    exec: 'npm start',
+    exec: 'npm start -- --inspect',
     ext: 'js hbs yml',
     ignore: ['gulpfile.babel.js', resolve(paths.src), resolve(paths.dist)],
     task: ['default'],
