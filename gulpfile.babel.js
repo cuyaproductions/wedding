@@ -63,7 +63,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('favicons', () => {
-  if (process.env.ENV !== 'dev') {
+  if (!isDev) {
     return gulp.src(resolve(paths.src, paths.images, 'favicon.png'))
       .pipe(favicons({
           icons: {

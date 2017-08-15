@@ -9,14 +9,14 @@ nav:
   menu: Menu
   close: Close menu
   links:
+    - name: RSVP
+      link: /en/rsvp
     - name: The big day
       link: '#big-day'
     - name: Schedule
       link: '#schedule'
     - name: More info
       link: '#more-info'
-    - name: RSVP
-      link: /en/rsvp
     - name: <img src="/static/images/colombia_flag.svg" class="nav__flag" /> ES
       link: /es/
 
@@ -31,11 +31,11 @@ bigDay:
     - label: When
       value: Friday, June 29, 2018
     - label: Where
-      value: <a href="http://houseonthehillaustin.com/">House on the Hill</a> in Austin, Texas
+      value: <a href="https://www.facebook.com/houseonthehillatx/">House on the Hill</a> in Austin, Texas
 
 schedule:
   title: Schedule
-  noEvents: Events for this day coming!
+  noEvents: Events for this day coming soon!
   dates:
     - day: Wednesday
       date: June 27
@@ -46,7 +46,7 @@ schedule:
       events:
         - time: TBD
           title: The ceremony
-          description: This is where the story begins. Where Diego and Nic become Mr. and Mr. and families unite as one.
+          description: "This is when the story begins: Diego and Nic become Mr. and Mr. and families unite as one."
         - time: TBD
           title: The reception
           description: Time to celebrate the newly weds! Let's eat, drink, and dance.
@@ -69,14 +69,14 @@ moreInfo:
         - The Austin-Bergstrom International Airport (AUS) is the primary way to get to Austin from outside of Texas. The airport is 10 miles from downtown, and 17 miles from the wedding venue.
     - question: Where will I stay in Austin?
       answer:
-      - There are many great hotels as well as numerous rental options through <a href="https://www.airbnb.com/s/Austin--TX--United-States/homes?checkin=2018-06-27&checkout=2018-07-02&adults=2&guests=2&allow_override%5B%5D=&s_tag=4GGBuMRA">Airbnb</a> and <a href="https://www.homeaway.com/results/texas/austin/region:7116/arrival:2018-06-27/departure:2018-07-02/minSleeps/2">HomeAway</a>. We recommend staying in the hill country and Westlake near the wedding venue, or in downtown Austin.  
-      - We have a block of suites available for our guest at the <a href="http://embassysuites.hilton.com/en/es/groups/personalized/A/AUSLKES-DNW-20180627/index.jhtml">Embassy Suites downtown</a>. The suites can be reserved for $189 / night for suites with a king bed and a full-sized pull out; or for $209 / night for suites with two queen beds and a full-sized pull out. These rooms come with complimentary wi-fi, breakfast, and happy hour each night. Because these are suites, we recommend pairing up with other guests; let us know if you'd like to do this so we can suggest attending relatives or friends you can share a suite with.
+      - There are many great hotels as well as numerous rental options through <a href="https://www.airbnb.com/s/Austin--TX--United-States/homes?checkin=2018-06-27&checkout=2018-07-02&adults=2&guests=2&allow_override%5B%5D=&s_tag=4GGBuMRA">Airbnb</a> and <a href="https://www.homeaway.com/results/texas/austin/region:7116/arrival:2018-06-27/departure:2018-07-02/minSleeps/2">HomeAway</a>. We recommend staying near the wedding venue in the hill country, the West Lake Hills area, or downtown Austin.
+      - Also, we have a block of suites available for our guest at the <a href="http://embassysuites.hilton.com/en/es/groups/personalized/A/AUSLKES-DNW-20180627/index.jhtml">Embassy Suites downtown</a>. The suites can be reserved for $189 / night for suites with a king bed and a full-sized pull out; or for $209 / night for suites with two queen beds and a full-sized pull out (prices do not include the 18% tax). These rooms come with complimentary wi-fi, breakfast, and happy hour each night. Because these are suites, we recommend pairing up with other guests; let us know if you'd like to do this so we can suggest attending relatives or friends you can share a suite with.
     - question: How will I get around Austin?
       answer: 
       - We recommend using services such as Uber, Lyft, Fasten, or Ride Austin as it is difficult to get around without a vehicle. Use the site <a href="https://ride.guru/">Ride.Guru</a> to find the best rate for any short trip. For a four-seater, it shouldn't cost more than $20 to get from downtown to the wedding venue. In addition, there are multiple car rental options at the airport.
     - question: What is the wedding venue like?
       answer: 
-      - Our wedding will take place at <a href="http://houseonthehillaustin.com/">House on the Hill</a>, which is a spacious, kitschy, woodsy house located in the hill country of west Austin.
+      - Our wedding will take place at <a href="https://www.facebook.com/houseonthehillatx/">House on the Hill</a>, which is a spacious, kitschy, woodsy house located in the hill country of west Austin.
     - question: What should I wear?
       answer: 
       - The wedding is in June, which is the middle of the hot Texas summer. We plan to dress only semi-formally, and have no dress code in mind - please dress as comfortably and stylishly as you want. The venue has a pool (which you are more than welcome to use!), and we plan to have ample water for guests to cool off. In addition, the main house on the property is air-conditioned.
