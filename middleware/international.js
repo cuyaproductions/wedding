@@ -22,6 +22,14 @@ const Languages = {
 const acceptedLanguages = new Set(Object.keys(Languages).map(langKey => Languages[langKey]));
 
 /**
+ * Gets the language string from a single language header string.
+ * 
+ * @param {String} string 
+ */
+function getLanguageFromHeaderString(string) {
+  return string.match(/(\w{2})((-|;)\w+)?/)[1];
+}
+/**
  * Parses the Accept-Language header to figure out what language to redirect to.
  *
  * @param {express.Request} request HTTP request object.
@@ -29,13 +37,17 @@ const acceptedLanguages = new Set(Object.keys(Languages).map(langKey => Language
  */
 function parseAcceptLanguageHeader(request) {
   const rawHeader = request.get('Accept-Language');
-  const matchedLanguages =  rawHeader.match(/(\w{2})(-|;)\w/);
+  const preferredLanguagesArray = rawHeader.split(',').map(getLanguageFromHeaderString);
+  
+  // Find the supported preferred language in the array. Once a supported language has been found,
+  // make that the language to forward to.
+  const preferredLanguage = preferredLanguagesArray.reduce((currentPreferredLang, language) => {
+    if (currentPreferredLang) return currentPreferredLang;
+    if (acceptedLanguages.has(language)) return language;
+    return null;
+  }, null);
 
-  if (acceptedLanguages.has(matchedLanguages[1])) {
-    return matchedLanguages[1];
-  }
-
-  return Languages.EN;
+  return preferredLanguage || Languages.EN;
 }
 
 /**
