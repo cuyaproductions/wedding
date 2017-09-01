@@ -3,9 +3,9 @@
   const calendar = document.querySelector('.calendar');
   const navigation = calendar.querySelector('.calendar__navigation');
   const container = calendar.querySelector('.calendar__container');
-  const buttons = calendar.querySelectorAll('.calendar__button');
-  const tabContents = calendar.querySelectorAll('.calendar__content');
-  const dateTitles = calendar.querySelectorAll('.calendar__date-title');
+  const buttons = [...calendar.querySelectorAll('.calendar__button')];
+  const tabContents = [...calendar.querySelectorAll('.calendar__content')];
+  const dateTitles = [...calendar.querySelectorAll('.calendar__date-title')];
   let currentTab = 0;
 
   /**

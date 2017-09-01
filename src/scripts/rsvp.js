@@ -1,6 +1,6 @@
 const form = document.querySelector('#rsvp-form');
 const additionalInfo = document.querySelector('#additional-info');
-const radioInputs = document.querySelectorAll('[name=isComing]');
+const radioInputs = [...document.querySelectorAll('[name=isComing]')];
 const partySize = document.querySelector('[name=partySize]');
 
 const frameRate = 1000 / 40;
