@@ -1,15 +1,6 @@
 import { Router } from 'express';
 import adminController from '../controllers/adminController';
 
-function isLoggedIn (request, response, next) {
-  if (request.isAuthenticated()) {
-    next();
-    return;
-  }
-
-  response.redirect('/admin/login');
-}
-
 function adminRouterConfig(passport) {
   const router = Router();
 
@@ -20,7 +11,7 @@ function adminRouterConfig(passport) {
 
   router.get('/logout', adminController.logout); 
   
-  router.get('*', isLoggedIn, adminController.dashboard);
+  router.get('*', adminController.isLoggedIn, adminController.dashboard);
 
   return router;
 }

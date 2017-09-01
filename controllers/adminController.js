@@ -7,11 +7,6 @@ function loginPage(request, response) {
   response.render('login', { className: 'login' });
 }
 
-
-function login(request, response) {
-  response.redirect('/admin/dashboard');
-}
-
 async function dashboard(request, response, next) {
   const rsvps = await getAll();
   console.log(rsvps);
@@ -23,9 +18,17 @@ function logout(request, response) {
   response.redirect('/admin');
 }
 
+function isLoggedIn (request, response, next) {
+  if (request.isAuthenticated()) {
+    next();
+    return;
+  }
+
+  response.redirect('/admin/login');
+}
 export default {
   loginPage,
-  login,
   dashboard,
   logout,
+  isLoggedIn,
 };
