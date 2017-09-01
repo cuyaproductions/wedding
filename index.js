@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import hbs from 'hbs';
 
 import express from 'express';
+import mongoConnect from 'connect-mongo';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 import compression from 'compression';
@@ -19,6 +20,7 @@ import passport from './config/passport';
 import routerConfig from './routes';
 
 const app = express();
+const MongoStore = mongoConnect(session);
 
 dotenv.config();
 configHbs(hbs, app);
@@ -46,14 +48,14 @@ app.use(session({
   secret: 'beetle dance',
   resave: false,
   saveUninitialized: false,
+  store: new MongoStore({ mongooseConnection: mongoose.connection }),
 }));
 
 // Initialize passport.
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-app.use('/static', express.static(path.resolve(__dirname, 'dist')));
+app.use('/static', express.static(path.resolve(__dirname, 'dist'), { maxAge: 86400 }));
 
 app.use(sanitizeBody);
 app.use(routerConfig(passport));
