@@ -114,6 +114,6 @@ rsvp:
 confirmation:
   title: Confirmatión
   titleError: Error
-  yes: ¡Qué bien! Vas a venir 😎. Visita la <a href="/en">página principal</a> para más información y anuncios. ¡Te estaremos esperando,
+  yes: ¡Qué bien! Vas a venir 😎. Visita la <a href="/es">página principal</a> para más información y anuncios. ¡Te estaremos esperando,
   no: ¡Qué triste que no vas a venir! Te echaremos de menos. Gracias por avisarnos,
   error: ¡Oh no! Se presentó un error procesando tu reservación. Por favor <a href="rsvp" title="Regresar a la forma">intenta otra vez</a>.

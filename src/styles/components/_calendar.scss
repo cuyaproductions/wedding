@@ -79,7 +79,7 @@
 
       @include media($bp-md) {
         height: rem(450);
-        overflow: scroll;
+        overflow: auto;
       }
     }
   }

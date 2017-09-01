@@ -15,7 +15,7 @@
       {{#each rsvps as |rsvp|}}
         <tr class="table__row">
           <td class="table__cell">{{{ rsvp.name }}}</td>
-          <td class="table__cell">{{ date rsvp.date }}</td>
+          <td class="table__cell">{{ dateHelper rsvp.date }}</td>
           <td class="table__cell">{{{ rsvp.isComing }}}</td>
           <td class="table__cell">{{{ rsvp.otherGuests }}}</td>
           <td class="table__cell">{{{ rsvp.foodRestrictions }}}</td>

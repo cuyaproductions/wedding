@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import moment from 'moment';
 import { getAll } from '../models/Rsvp';
 
 const Rsvp = mongoose.model('Rsvp');
@@ -9,7 +10,6 @@ function loginPage(request, response) {
 
 async function dashboard(request, response, next) {
   const rsvps = await getAll();
-  console.log(rsvps);
   response.render('adminDashboard', { rsvps, className: 'dashboard' });
 }
 
