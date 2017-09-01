@@ -20,7 +20,7 @@ async function dashboard(request, response, next) {
 
 function logout(request, response) {
   request.logout();
-  response.redirect('/');
+  response.redirect('/admin');
 }
 
 export default {

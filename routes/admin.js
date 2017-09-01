@@ -13,15 +13,14 @@ function isLoggedIn (request, response, next) {
 function adminRouterConfig(passport) {
   const router = Router();
 
-  router.get(['/', '/login'], adminController.loginPage);
-  
+  router.get('/login', adminController.loginPage);
+
   router.post('/login', 
-    passport.authenticate('local', { failureRedirect: '/admin/login' }), 
-    adminController.login);
+    passport.authenticate('local', { failureRedirect: '/admin', successRedirect: '/admin' }));
 
   router.get('/logout', adminController.logout); 
   
-  router.get('/dashboard', isLoggedIn, adminController.dashboard);
+  router.get('*', isLoggedIn, adminController.dashboard);
 
   return router;
 }
