@@ -4,7 +4,8 @@
   "description": "Our wedding website",
   "main": "index.js",
   "engines": {
-    "node": "7.10.0"
+    "node": "8.4.0",
+    "npm": "5.6.0"
   },
   "scripts": {
     "prestart": "gulp",
