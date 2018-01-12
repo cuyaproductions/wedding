@@ -55,7 +55,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/static', express.static(path.resolve(process.cwd(), 'dist'), { maxAge: 86400 }));
+app.use('/static', express.static(path.join(process.cwd(), 'dist'), { maxAge: 86400 }));
 
 app.use(sanitizeBody);
 app.use(routerConfig(passport));
