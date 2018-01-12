@@ -5,6 +5,10 @@
     display: flex;
   }
 
+  &__aside {
+    flex: 0 0 8em;
+  }
+
   &__time {
     @include h4;
 
@@ -12,10 +16,11 @@
     font-size: 0.9em;
     font-weight: 600;
 
-    color: $black;
+    color: $brown;
 
     @include media($bp-sm) {
       margin-right: 1em;
+      font-size: 1em;
     }
   }
 

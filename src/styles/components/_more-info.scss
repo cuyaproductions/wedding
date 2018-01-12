@@ -1,6 +1,11 @@
 .more-info {
   &__content {
     @include container;
+    padding-bottom: 0.5rem;
+
+    @media (min-width: rem(1000)) {
+      padding-bottom: 0.5rem;
+    }
   }
 
   &__list {
