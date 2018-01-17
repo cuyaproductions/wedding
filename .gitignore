@@ -6,10 +6,11 @@ dist/
 
 # NPM packages
 node_modules/
+package-lock.json
 
 # IDE files
-.idea
-.vscode
+.idea/
+.vscode/**
 
 # Other
 .DS_Store
