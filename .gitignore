@@ -10,7 +10,7 @@ package-lock.json
 
 # IDE files
 .idea/
-.vscode/**
+.vscode
 
 # Other
 .DS_Store
