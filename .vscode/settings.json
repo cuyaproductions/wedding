@@ -10,19 +10,19 @@
     ".idea": true,
     ".vscode": true,
     "# Other": true,
-    ".DS_store": true
+    ".DS_Store": true
   },
   "files.exclude": {
-    "# Environment files": false,
-    ".env": false,
-    "# Build files": false,
-    "dist/": false,
-    "# NPM packages": false,
-    "node_modules/": false,
-    "# IDE files": false,
-    ".idea": false,
-    ".vscode": false,
-    "# Other": false,
-    ".DS_store": false
+    "# Environment files": true,
+    ".env": true,
+    "# Build files": true,
+    "dist/": true,
+    "# NPM packages": true,
+    "node_modules/": true,
+    "# IDE files": true,
+    ".idea": true,
+    ".vscode": true,
+    "# Other": true,
+    ".DS_Store": true
   }
 }

@@ -39,9 +39,16 @@ schedule:
   dates:
     - day: miércoles
       date: junio 27
+      events:
+        - time: Mediodía
+          title: ¡Bienvenidos a Austin!
+          description: Pasa a saludar a los novios para un encuentro en el centro de Austin. Lugar exacto será determinado pronto.
     - day: jueves
       date: junio 28
       events:
+        - time: En la mañana
+          title: Carrera/caminata de 5km
+          description: Empieza tu día con una carrera/caminata de 5 kilómetros en el Lago Lady Bird. Si no te interesa correr ni caminar 5km, ¡ven a pasar agua y animar a los corredores!
         - time: En la tarde
           title: Fiesta de piscina
           description: ¡Acompáñanos en House on the Hill para refrescarte en la piscina! Más información viene pronto.
@@ -59,9 +66,10 @@ schedule:
       events:
         - time: En la tarde
           title: Refréscate en el lago Lady Bird
-          description: Relajémonos en las aguas refrescantes del lago Lady Bird en el centro de Austin en kayak, canoa, o paddleboard. Más información viene pronto.
-    - day: domingo
-      date: julio 1
+          description: Relajémonos en las aguas refrescantes del lago Lady Bird en el centro de Austin en kayak, canoa, o paddleboard. Recomendamos <a href="http://www.texasrowingcenter.com/" target="_blank">Texas Rowing Club</a> y <a href="https://www.rowingdock.com/" target="_blank">Rowing Dock</a> para el alquiler de botes. Revisa sus páginas de internet para ver precios.  Más información viene pronto.
+        - time: En la noche
+          title: Relájate con los recién casados
+          description: Si estás en Austin, ven a pasar un rato en House on the Hill para meterse a la piscina, jugar juegos de jardín, y relajarte.
 
 
 moreInfo:

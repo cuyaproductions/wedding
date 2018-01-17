@@ -58,7 +58,6 @@ function parseAcceptLanguageHeader(request) {
  * @param {function} next Calls next middleware.
  */
 function findLanguage (request, response, next) {
-  console.log(request.originalUrl);
   const { lang } = request.params; 
 
   // If no language was detected, redirect to english

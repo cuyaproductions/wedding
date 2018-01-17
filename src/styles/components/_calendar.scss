@@ -78,7 +78,6 @@
       z-index: 1;
 
       @include media($bp-md) {
-        height: rem(450);
         overflow: auto;
       }
     }
