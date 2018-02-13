@@ -37,18 +37,12 @@ schedule:
   title: Horario
   noEvents: ¡Eventos para este día vienen pronto!
   dates:
-    - day: miércoles
-      date: junio 27
-      events:
-        - time: Mediodía
-          title: ¡Bienvenidos a Austin!
-          description: Pasa a saludar a los novios para un encuentro en el centro de Austin. Lugar exacto será determinado pronto.
     - day: jueves
       date: junio 28
       events:
         - time: En la mañana
-          title: Carrera/caminata de 5km
-          description: Empieza tu día con una carrera/caminata de 5 kilómetros en el Lago Lady Bird. Si no te interesa correr ni caminar 5km, ¡ven a pasar agua y animar a los corredores!
+          title: Un trote alrededor del Lago Lady Bird
+          description: Empieza tu día con una carrera/caminata en el Lago Lady Bird. Si no te interesa correr ni caminar, ¡ven a pasar agua y animar a los corredores!
         - time: En la tarde
           title: Fiesta de piscina
           description: ¡Acompáñanos en House on the Hill para refrescarte en la piscina! Más información viene pronto.

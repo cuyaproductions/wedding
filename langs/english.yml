@@ -37,18 +37,12 @@ schedule:
   title: Schedule
   noEvents: Events for this day coming soon!
   dates:
-    - day: Wednesday
-      date: June 27
-      events:
-        - time: Midday
-          title: Welcome to Austin!
-          description: Drop by and say hi to the grooms for a casual meet and greet somewhere downtown. Exact location to come.
     - day: Thursday
       date: June 28
       events:
         - time: Morning
-          title: Wedding 5k run/walk
-          description: Start your day with a fun 5 kilometer walk/run at Lady Bird Lake. If running or walking 5km is not your thing, come hand out water and cheer on the runners!
+          title: Morning run at Lady Bird Lake
+          description: Start your day with a fun walk/run at Lady Bird Lake. If running or walking is not your thing, come hand out water and cheer on the runners!
         - time: Afternoon
           title: Pool party
           description: Join us at House on the Hill to cool off from the heat! More information to come.
