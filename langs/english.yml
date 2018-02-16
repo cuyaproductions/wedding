@@ -52,6 +52,9 @@ schedule:
         - time: 5pm
           title: The ceremony
           description: "This is when the story begins: Diego and Nic become Mr. and Mr. and families unite as one."
+        - time: 5pm
+          title: The ceremony
+          description: "This is when the story begins: Diego and Nic become Mr. and Mr. and families unite as one."
         - time: After ceremony
           title: The reception
           description: Time to celebrate the newly weds! Let's eat, drink, and dance.
