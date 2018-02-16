@@ -49,7 +49,7 @@ schedule:
     - day: Friday
       date: June 29
       events:
-        - time: Late afternoon (exact time TBD)
+        - time: 5pm
           title: The ceremony
           description: "This is when the story begins: Diego and Nic become Mr. and Mr. and families unite as one."
         - time: After ceremony
