@@ -49,11 +49,9 @@ schedule:
     - day: Friday
       date: June 29
       events:
-        - time: 5pm
-          title: The ceremony
+        - time: Late afternoon
+          title: The teaching path
           description: "This is when the story begins: Diego and Nic become Mr. and Mr. and families unite as one."
-        - time: 5pm
-          title: The ceremony
           description: "This is when the story begins: Diego and Nic become Mr. and Mr. and families unite as one."
         - time: After ceremony
           title: The reception
