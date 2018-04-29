@@ -9,14 +9,12 @@ nav:
   menu: Menu
   close: Close menu
   links:
-    - name: RSVP
-      link: /en/rsvp
-    - name: The big day
-      link: '#big-day'
     - name: Schedule
       link: '#schedule'
     - name: More info
       link: '#more-info'
+    - name: What to do in Austin
+      link: '#what-to-do'
     - name: <img src="/static/images/colombia_flag.svg" class="nav__flag" /> ES
       link: /es/
 
@@ -40,30 +38,41 @@ schedule:
     - day: Thursday
       date: June 28
       events:
-        - time: Morning
+        - time: 8:30 am
           title: Morning run at Lady Bird Lake
+          location: Meet at lobby of Embassy Suites Hotel
+          address: 300 S Congress Ave, Austin, TX 78704
           description: Start your day with a fun walk/run at Lady Bird Lake. If running or walking is not your thing, come hand out water and cheer on the runners!
-        - time: Afternoon
-          title: Pool party
-          description: Join us at House on the Hill to cool off from the heat! More information to come.
+        - time: 11:00 am
+          title: Soak at Lady Bird Lake
+          location: Location to be determined
+          description: Relax in the refreshing waters of Lady Bird Lake in downtown Austin by joining us in kayaking, paddleboarding, or canoeing. Recommened rental locations are <a href="http://www.texasrowingcenter.com/" target="_blank">Texas Rowing Club</a> and <a href="https://www.rowingdock.com/" target="_blank">Rowing Dock</a>. Check their websites for rental rates. More details to come.
+        - time: 5:00 pm
+          title: Rehearsal and setup
+          location: House on the Hill
+          address: 319 Addie Roy Rd, Austin, TX 78746
+          description: <strong>For wedding party, parents, grandparents, and friends helping organize only</strong>. If you're not required to attend, this would be a great time to <a href="#what-to-do">explore our beautiful city</a>!
     - day: Friday
       date: June 29
       events:
-        - time: Late afternoon (exact time TBD)
+        - time: 6:30 pm
           title: The ceremony
+          location: House on the Hill
+          address: 319 Addie Roy Rd, Austin, TX 78746
           description: "This is when the story begins: Diego and Nic become Mr. and Mr. and families unite as one."
         - time: After ceremony
           title: The reception
-          description: Time to celebrate the newly weds! Let's eat, drink, and dance.
+          location: House on the Hill
+          address: 319 Addie Roy Rd, Austin, TX 78746
+          description: Time to celebrate the newly weds! Let's eat crepes from one of our favorite food trucks (fish, vegetarian, chickent, turkey) and sides, drink, and dance.
     - day: Saturday
       date: June 30
       events:
-        - time: Afternoon
-          title: Soak at Lady Bird Lake
-          description: Relax in the refreshing waters of Lady Bird Lake in downtown Austin by joining us in kayaking, paddleboarding, or canoeing. Recommened rental localtions are <a href="http://www.texasrowingcenter.com/" target="_blank">Texas Rowing Club</a> and <a href="https://www.rowingdock.com/" target="_blank">Rowing Dock</a>. Check their websites for rental rates. More details to come.
-        - time: Evening
-          title: Chill with the newlyweds
-          description: If you are still in town, come and hang out with us at House on the Hill for pool time, lawn games, and relaxing.
+        - time: 2:00 pm
+          title: Pool party
+          location: House on the Hill
+          address: 319 Addie Roy Rd, Austin, TX 78746
+          description: Join us at House on the Hill to cool off from the heat! More information to come.
 
 moreInfo:
   title: More information

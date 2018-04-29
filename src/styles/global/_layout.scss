@@ -3,7 +3,7 @@
   max-width: rem(800);
   padding: 1em rem(16);
 
-  @media (min-width: rem(1000)) {
+  @include media ($bp-lg) {
     padding: 3em rem(16);
   }
 }

@@ -1,14 +1,6 @@
-$font-size: 16;
+$font-size: $base-unit;
 $font-serif: 'Rye', Georgia, serif;
 $font-sans-serif: 'Dosis', sans-serif;
-
-@function rem($value) {
-  @return $value / #{$font-size}rem;
-}
-
-@function em($value) {
-  @return $value / #{$font-size}em;
-}
 
 html {
   font-size: #{$font-size}px;

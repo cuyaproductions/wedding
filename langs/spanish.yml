@@ -9,14 +9,12 @@ nav:
   menu: Menú
   close: Cerrar menu
   links:
-    - name: Reservación
-      link: /es/rsvp
-    - name: El gran día
-      link: '#big-day'
     - name: Horario
       link: '#schedule'
     - name: Más información
       link: '#more-info'
+    - name: Que hacer en Austin
+      link: '#what-to-do'
     - name: <img src="/static/images/us_flag.svg" class="nav__flag" /> EN
       link: /en/
 
@@ -40,30 +38,41 @@ schedule:
     - day: jueves
       date: junio 28
       events:
-        - time: En la mañana
+        - time: 8:30 am
           title: Un trote alrededor del Lago Lady Bird
+          location: Encontrarse en la recepción del Hotel Embassy Suites
+          address: 300 S Congress Ave, Austin, TX 78704
           description: Empieza tu día con una carrera/caminata en el Lago Lady Bird. Si no te interesa correr ni caminar, ¡ven a pasar agua y animar a los corredores!
-        - time: En la tarde
-          title: Fiesta de piscina
-          description: ¡Acompáñanos en House on the Hill para refrescarte en la piscina! Más información viene pronto.
+        - time: 11:00 am
+          title: Refréscate en el lago Lady Bird
+          location: Ubicación será determinada
+          description: Relajémonos en las aguas refrescantes del lago Lady Bird en el centro de Austin en kayak, canoa, o paddleboard. Recomendamos <a href="http://www.texasrowingcenter.com/" target="_blank">Texas Rowing Club</a> y <a href="https://www.rowingdock.com/" target="_blank">Rowing Dock</a> para el alquiler de botes. Revisa sus páginas de internet para ver precios.  Más información viene pronto.
+        - time: 5:00 pm
+          title: Ensayo y preparación
+          location: House on the Hill
+          address: 319 Addie Roy Rd, Austin, TX 78746
+          description: <strong>Solo para los padres, abuelos y amigos ayudando con los preparativos</strong>. ¡Si no es necesario que participes, ésta es una buena oportunidad para <a href="#what-to-do">conocer nuestra hermosa ciudad</a>!
     - day: viernes
       date: junio 29
       events:
-        - time: Al final de la tarde (hora exacta será determinada)
+        - time: 6:30 pm
           title: La ceremonia
+          location: House on the Hill
+          address: 319 Addie Roy Rd, Austin, TX 78746
           description: "Aquí es cuando su historia empieza: Nic y Diego se convierten en Sr. y Sr., y sus familias se unen a una."
         - time: Despues de la ceremonia
           title: La recepción
+          location: House on the Hill
+          address: 319 Addie Roy Rd, Austin, TX 78746
           description: ¡Es hora de celebrar los recién casados! A comer, tomar y bailar se dijo.
     - day: sábado
       date: junio 30
       events:
-        - time: En la tarde
-          title: Refréscate en el lago Lady Bird
-          description: Relajémonos en las aguas refrescantes del lago Lady Bird en el centro de Austin en kayak, canoa, o paddleboard. Recomendamos <a href="http://www.texasrowingcenter.com/" target="_blank">Texas Rowing Club</a> y <a href="https://www.rowingdock.com/" target="_blank">Rowing Dock</a> para el alquiler de botes. Revisa sus páginas de internet para ver precios.  Más información viene pronto.
-        - time: En la noche
-          title: Relájate con los recién casados
-          description: Si estás en Austin, ven a pasar un rato en House on the Hill para meterse a la piscina, jugar juegos de jardín, y relajarte.
+        - time: 2:00 pm
+          title: Fiesta de piscina
+          location: House on the Hill
+          address: 319 Addie Roy Rd, Austin, TX 78746
+          description: ¡Acompáñanos en House on the Hill para refrescarte en la piscina! Más información viene pronto.
 
 
 moreInfo:
