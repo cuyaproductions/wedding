@@ -27,7 +27,7 @@ bigDay:
     - label: Who
       value: Diego and Nic
     - label: When
-      value: Friday, June 29, 2018
+      value: Friday, June 29, 2018 at 6:30pm
     - label: Where
       value: <a href="https://www.facebook.com/houseonthehillatx/">House on the Hill</a> in Austin, Texas
 
@@ -35,18 +35,25 @@ schedule:
   title: Schedule
   noEvents: Events for this day coming soon!
   dates:
-    - day: Thursday
-      date: June 28
+    - day: Wednesday
+      date: June 27
       events:
         - time: 8:30 am
           title: Morning run at Lady Bird Lake
           location: Meet at lobby of Embassy Suites Hotel
           address: 300 S Congress Ave, Austin, TX 78704
           description: Start your day with a fun walk/run at Lady Bird Lake. If running or walking is not your thing, come hand out water and cheer on the runners!
+    - day: Thursday
+      date: June 28
+      events:
+        - time: 8:30 am
+          title: "Word Cup: Colombia vs. Senegal"
+          location: Location to be determined
+          description: Watch Colombia take on Senegal and win victoriously! Colombia! Colombia! Colombia!
         - time: 11:00 am
           title: Soak at Lady Bird Lake
-          location: Location to be determined
-          description: Relax in the refreshing waters of Lady Bird Lake in downtown Austin by joining us in kayaking, paddleboarding, or canoeing. Recommened rental locations are <a href="http://www.texasrowingcenter.com/" target="_blank">Texas Rowing Club</a> and <a href="https://www.rowingdock.com/" target="_blank">Rowing Dock</a>. Check their websites for rental rates. More details to come.
+          location: <a href="http://www.texasrowingcenter.com/" target="_blank">Texas Rowing Club</a> or <a href="https://www.rowingdock.com/" target="_blank">Rowing Dock</a>
+          description: Relax in the refreshing waters of Lady Bird Lake in downtown Austin by joining us in kayaking, paddleboarding, or canoeing. Recommened rental locations are <a href="http://www.texasrowingcenter.com/" target="_blank">Texas Rowing Club</a> and <a href="https://www.rowingdock.com/" target="_blank">Rowing Dock</a>. Check their websites for rental rates.
         - time: 5:00 pm
           title: Rehearsal and setup
           location: House on the Hill

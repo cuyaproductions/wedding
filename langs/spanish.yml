@@ -27,7 +27,7 @@ bigDay:
     - label: Quienes
       value: Nic y Diego
     - label: Cuándo
-      value: viernes 29 de junio, 2018
+      value: viernes 29 de junio, 2018 a las 6:30pm
     - label: Dónde
       value: <a href="https://www.facebook.com/houseonthehillatx/">House on the Hill</a> en Austin, Texas, EEUU
 
@@ -35,14 +35,21 @@ schedule:
   title: Horario
   noEvents: ¡Eventos para este día vienen pronto!
   dates:
+    - day: miercoles
+      date: junio 27
+      events:
+        - time: 8:30 am
+          title: Una salida a trotar alrededor del Lago Lady Bird
+          location: Encontrarse en la recepción del Hotel Embassy Suites
+          address: 300 S Congress Ave, Austin, TX 78704
+          description: Empieza tu día con una carrera/caminata en el Lago Lady Bird. Si no te interesa correr ni caminar, ¡ven a pasar agua y animar a los corredores!
     - day: jueves
       date: junio 28
       events:
         - time: 8:30 am
-          title: Un trote alrededor del Lago Lady Bird
-          location: Encontrarse en la recepción del Hotel Embassy Suites
-          address: 300 S Congress Ave, Austin, TX 78704
-          description: Empieza tu día con una carrera/caminata en el Lago Lady Bird. Si no te interesa correr ni caminar, ¡ven a pasar agua y animar a los corredores!
+          title: "Copa Mundial: Colombia vs. Senegal"
+          location: Ubicación será determinada
+          description: ¡Veamos cómo Colombia se enfrenta a Senegal y gana victoriosamente! ¡Colombia! ¡Colombia! ¡Colombia!
         - time: 11:00 am
           title: Refréscate en el lago Lady Bird
           location: Ubicación será determinada
