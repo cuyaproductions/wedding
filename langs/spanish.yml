@@ -27,7 +27,7 @@ bigDay:
     - label: Quienes
       value: Nic y Diego
     - label: Cuándo
-      value: viernes 29 de junio, 2018 a las 6:30pm
+      value: viernes 29 de junio, 2018 a las 6:00pm
     - label: Dónde
       value: <a href="https://www.facebook.com/houseonthehillatx/">House on the Hill</a> en Austin, Texas, EEUU
 
@@ -62,7 +62,7 @@ schedule:
     - day: viernes
       date: junio 29
       events:
-        - time: 6:30 pm
+        - time: 6:00 pm
           title: La ceremonia
           location: House on the Hill
           address: 319 Addie Roy Rd, Austin, TX 78746
